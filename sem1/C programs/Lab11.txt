@@ -1,0 +1,171 @@
+1.)->.............
+
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+int i,l=0;
+int ustrlen (char []);
+void main ()
+{
+char name[20];
+clrscr ();
+printf ("Enter the name:\n");
+gets (name);
+l=ustrlen (name);
+printf ("The length is %d.",l);
+getch ();
+}
+int ustrlen (char x[])
+{
+for (i=0;x[i]!='\0';i++)
+l++;
+return l;
+}
+
+==================================================================
+2.)->.............
+
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+void ustrcat (char [], char []);
+void  main ()
+{
+ char a[20],b[20];
+ clrscr ();
+ printf ("Enter 1st string to concatenate:\n");
+ gets (a);
+ printf ("Enter 2nd string to concatenate:\n");
+ gets (b);
+ printf ("After concatenation.\n");
+ ustrcat (a,b);
+ getch ();
+
+}
+void ustrcat (char a[], char b[])
+{
+int i,j;
+i=strlen(a);
+for (j=0;b[j]!='\0';i++,j++)
+  {
+    a[i]=b[j];
+  }
+  a[i]='\0';
+  puts (a);
+}
+
+
+==================================================================
+3.)->.............
+
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+void main ()
+{
+char word [20],b[20];
+int i,l,j=0;
+clrscr ();
+printf ("Enter the word:\n");
+gets (word);
+printf ("After reverse:\n");
+l=strlen (word);
+for (i=l-1;i>=0;i--)
+  {
+  //b[k]=a[i];
+  *(b+j)=*(word+i);
+  j++;
+  }
+  *(b+j)='\0';
+  puts (b);
+getch ();
+}
+
+
+==================================================================
+4.)->.............
+
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+void main ()
+{
+char sen [20];
+int i,c=0;
+clrscr ();
+printf ("Enter the sentence:\n");
+gets (sen);
+for (i=0;sen[i]!='\0';i++)
+  {
+   if (sen [i]=='a'||sen [i]=='e'||sen [i]=='i'||sen [i]=='o'||sen [i]=='u')
+   c++;
+  }
+printf ("The total vowel are %d:\n",c);
+getch ();
+}
+
+
+
+==================================================================
+5.)->.............
+
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+void main ()
+{
+ char name[4][10],search [10];
+ int i;
+ clrscr ();
+ printf ("Enter the name of 4 students:\n");
+ for (i=0;i<4;i++)
+ gets (name[i]);
+ printf ("Enter the name to search:\n");
+ gets (search);
+ for (i=0;i<4;i++)
+   {
+    if (strcmp(search,name[i])==0)
+      {
+      printf ("Found\n");
+      break;
+      }
+   }
+   if (i==4)
+   printf ("Not Found\n");
+ getch ();
+}
+
+
+
+
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+void main ()
+{
+char name [5][10],temp [10];
+int i,j;
+clrscr ();
+printf ("Enter 5 names:\n");
+for (i=0;i<5;i++)
+gets (name[i]);
+for (i=0;i<4;i++)
+  {
+  for (j=i+1;j<5;j++)
+    {
+     if (strcmp(name[i],name[j])>0)
+       {
+       strcpy(temp,name[j]);
+       strcpy(name[j],name[i]);
+       strcpy(name[i],temp);
+       }
+    }
+  }
+  printf ("In ascending:\n");
+ for (i=0;i<5;i++)
+ {
+ puts(name[i]);
+ //printf ("\n");
+ }
+ getch ();
+}

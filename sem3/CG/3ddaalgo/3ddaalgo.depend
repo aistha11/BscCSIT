@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1544412351 source:c:\users\sagarmatha\desktop\3ddaalgo\main.cpp
+	<iostream>
+	<graphics.h>
+	<math.h>
+	<iomanip>
+

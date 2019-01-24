@@ -1,0 +1,63 @@
+$date
+  Thu Jan 24 13:07:51 2019
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 4 ! a[3:0] $end
+$var reg 4 " b[3:0] $end
+$var reg 4 # y[3:0] $end
+$var reg 3 $ alu_sel[2:0] $end
+$scope module bijay $end
+$var reg 4 % a[3:0] $end
+$var reg 4 & b[3:0] $end
+$var reg 3 ' alu_sel[2:0] $end
+$var reg 4 ( y[3:0] $end
+$upscope $end
+$enddefinitions $end
+#0
+b0100 !
+b1001 "
+b1101 #
+b000 $
+b0100 %
+b1001 &
+b000 '
+b1101 (
+#1000000
+b1011 #
+b001 $
+b001 '
+b1011 (
+#2000000
+b0101 #
+b010 $
+b010 '
+b0101 (
+#3000000
+b0011 #
+b011 $
+b011 '
+b0011 (
+#4000000
+b1011 #
+b100 $
+b100 '
+b1011 (
+#5000000
+b0000 #
+b101 $
+b101 '
+b0000 (
+#6000000
+b1101 #
+b110 $
+b110 '
+b1101 (
+#7000000
+b111 $
+b111 '
+#8000000

@@ -1,0 +1,57 @@
+$date
+  Tue Jan 15 17:36:04 2019
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 8 ! a[7:0] $end
+$var reg 8 " b[7:0] $end
+$var reg 1 # g $end
+$var reg 1 $ l $end
+$var reg 1 % e $end
+$scope module comparators $end
+$var reg 8 & a[7:0] $end
+$var reg 8 ' b[7:0] $end
+$var reg 1 ( g $end
+$var reg 1 ) l $end
+$var reg 1 * e $end
+$upscope $end
+$enddefinitions $end
+#0
+b01000010 !
+b01000000 "
+1#
+0$
+0%
+b01000010 &
+b01000000 '
+1(
+0)
+0*
+#1000000
+b01000000 !
+b01000100 "
+0#
+1$
+b01000000 &
+b01000100 '
+0(
+1)
+#2000000
+b01010000 !
+b01010010 "
+b01010000 &
+b01010010 '
+#3000000
+b01000000 !
+b01000000 "
+0$
+1%
+b01000000 &
+b01000000 '
+0)
+1*
+#4000000

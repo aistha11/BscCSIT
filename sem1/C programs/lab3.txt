@@ -1,0 +1,182 @@
+====================================================================
+1.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+int a,b,c;
+clrscr ();
+printf ("Enter three numbers\n");
+scanf ("%d%d%d",&a,&b,&c);
+if (a>b)
+	{
+	if (a>c)
+	printf ("%d is largest number\n",a);
+	else
+	printf ("%d is the largest number\n",c);
+	}
+else
+	{
+	if (b>c)
+	printf ("%d is the largest number\n",b);
+	else
+	printf ("%d is the largest number",c);
+	}
+getch ();
+}
+
+====================================================================
+2.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+int a;
+clrscr ();
+printf ("Enter a year\n");
+scanf ("%d",&a);
+if (a%4==0)
+	{
+	if (a%100==0)
+		{
+		if (a%400==0)
+		printf ("%d is leap year\n",a);
+		else
+		printf ("%d is not leap year\n",a);
+
+		}
+	else
+	printf ("%d is leap year\n",a);
+	}
+else
+printf ("%d is not leap year\n",a);
+getch ();
+}
+
+====================================================================
+3.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+void main ()
+{
+float a,b,c;
+float disc,real,imag;
+float R1,R2;
+clrscr ();
+printf ("Enter a b c for quadratic equation:\n");
+scanf ("%f%f%f",&a,&b,&c);
+disc=b*b-4.0*a*c;
+real=-b/(2.0*a);
+imag=sqrt(abs(disc))/(2.0*a);
+switch (disc>0)
+       {	case 1:
+			R1=real+imag;
+			R2=real-imag;
+			printf ("Roots are real and distinct:\nRoot1=%f\nRoot2=%f\n",R1,R2);
+			break;
+
+	case 0:
+		switch (disc<0)
+		       {	case 1:
+				printf ("Roots are imaginary:\nRoot1=%f+i%f\n",real,imag);
+				printf ("Root2=%f-i%f\n",real,imag);
+				break;
+			case 0:
+				R1=real;
+				R2=R1;
+				printf ("Roots are real and equal:\nRoot1=%f\nRoot2=%f\n",R1,R2);
+				break;
+
+			}
+
+       }
+       getch ();
+}
+
+====================================================================
+4.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+int a;
+clrscr ();
+printf ("Enter a number from 1 to 12:\n");
+scanf ("%d",&a);
+if (a==1)
+printf ("January\n");
+else if (a==2)
+printf ("February\n");
+else if (a==3)
+printf ("March\n");
+else if (a==4)
+printf ("April\n");
+else if (a==5)
+printf ("May\n");
+else if (a==6)
+printf ("June\n");
+else if (a==7)
+printf ("July\n");
+else if (a==8)
+printf ("August\n");
+else if (a==9)
+printf ("September\n");
+else if (a==10)
+printf ("October\n");
+else if (a==11)
+printf ("November\n");
+else if (a==12)
+printf ("December\n");
+else
+printf ("Dont you understand English\n");
+getch ();
+}
+
+====================================================================
+5.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+void main ()
+{
+char op;
+int a,b,r;
+clrscr ();
+printf ("Enter first number: ");
+scanf ("%d",&a);
+printf ("Enter operator: ");
+scanf (" %c",&op);
+printf ("Enter second number: ");
+scanf ("%d",&b);
+switch (op)
+{
+case '+':
+	r=a+b;
+	//printf ("Result is %d",r);
+	break;
+case '-':
+	r=a-b;
+	//printf ("Result is %d",r);
+	break;
+case '*':
+	r=a*b;
+	//printf ("Result is %d",r);
+	break;
+case '/':
+	r=a/b;
+	//printf ("Result is %d",r);
+	break;
+default: printf ("Invalid operator.");
+}
+
+getch ();
+}
+
+
+

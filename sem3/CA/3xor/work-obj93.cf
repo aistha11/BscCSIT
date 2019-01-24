@@ -1,0 +1,7 @@
+v 4
+file . "xor_t.vhdl" "c89ec8f0544fb4436b75d03b42ae10132e3ac6b9" "20181218161950.307":
+  entity xor_tb at 1( 0) + 0 on 13;
+  architecture xor_tb_beh of xor_tb at 7( 80) + 0 on 14;
+file . "xor.vhdl" "cae73d101b2dfad1cbe3e1d8d483a07fdd125b21" "20181218161932.807":
+  entity xor1 at 1( 0) + 0 on 11;
+  architecture xor_beha of xor1 at 10( 117) + 0 on 12;

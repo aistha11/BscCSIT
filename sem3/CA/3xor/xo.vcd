@@ -1,0 +1,41 @@
+$date
+  Tue Dec 18 22:07:11 2018
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 1 ! p $end
+$var reg 1 " q $end
+$var reg 1 # r $end
+$scope module xorgate $end
+$var reg 1 $ a $end
+$var reg 1 % b $end
+$var reg 1 & c $end
+$upscope $end
+$enddefinitions $end
+#0
+0!
+0"
+0#
+0$
+0%
+0&
+#1000000
+1!
+1#
+1$
+1&
+#2000000
+0!
+1"
+0$
+1%
+#3000000
+1!
+0#
+1$
+0&
+#4000000

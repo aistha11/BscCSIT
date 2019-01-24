@@ -1,0 +1,7 @@
+v 4
+file . "magcompar_tb.vhdl" "360ca3b879a4bbc294c5ea1cb2492f1098c80300" "20190115115007.189":
+  entity comparator_tb at 1( 0) + 0 on 13;
+  architecture a_comparator_tb of comparator_tb at 7( 94) + 0 on 14;
+file . "magcompar.vhdl" "796e929f7ce96d74ad8deb8c49d1bd759d344169" "20190115115000.157":
+  entity comparator at 1( 0) + 0 on 11;
+  architecture a_comparator of comparator at 10( 160) + 0 on 12;

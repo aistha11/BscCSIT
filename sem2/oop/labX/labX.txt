@@ -1,0 +1,328 @@
+1).
+#include <iostream>
+#include <iomanip>
+using namespace std;
+class A
+{
+    private: int x;
+    protected: int y;
+    public:
+        A (int a)
+        {
+            y=a;
+        }
+    void getdata ()
+    {
+        cout<<"Enter x=";cin>>x;
+        cout<<"Enter y=";cin>>y;
+    }
+    void showdata ()
+    {
+        cout<<"x="<<x<<endl<<"y="<<y<<endl;
+    }
+};
+class B: private A
+{
+  int z;
+  public: B (int a, int b) : A(b)
+          {
+            z=a;
+          }
+          void sum ()
+          {
+              cout<<"Sum = "<<z+y;
+          }
+};
+int main ()
+{
+    B b(4,6);
+    b.sum();
+    return 0;
+}
+
+========================================================================================
+2).
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+class A
+{
+    private: int x;
+    protected: int y;
+    public:
+    void getdata ()
+    {
+        cout<<"Enter x=";cin>>x;
+        cout<<"Enter y=";cin>>y;
+    }
+    void display ()
+    {
+        cout<<"x="<<x<<endl<<"y="<<y<<endl;
+    }
+};
+class B: protected A
+{
+  int z;
+  public: void setdata (int a, int b)
+          {
+            z=a;
+            y=b;
+          }
+          void showdata ()
+          {
+              cout<<"z= "<<z<<"\ny= "<<y;
+          }
+};
+int main ()
+{
+    B b;
+    //b.getdata();   is not accessible
+    //b.display();   is not accessible
+    b.setdata(4,5);
+    b.showdata();
+    return 0;
+}
+
+
+==================================================================================
+3).
+
+#include <iostream>
+#include <iomanip>
+#include <string.h>
+using namespace std;
+class person
+{
+  char name [20];
+  int age;
+  char address [50];
+  public:
+        void getdata (char nm[],int a,char adr[])
+        {
+            strcpy(name,nm);
+            age=a;
+            strcpy(address,adr);
+        }
+        void display()
+        {
+           cout<<"Name: "<<name<<"\nAge: "<<age<<"\nAddress: "<<address<<endl;
+        }
+};
+class employ: public person
+{
+   int sal;
+   char compname [20];
+   public:
+            void setdata (int s, char cnm [])
+            {
+               sal=s;
+               strcpy(compname,cnm);
+            }
+            void show ()
+            {
+                cout<<"Salary: "<<sal<<"\nCompany name: "<<compname<<endl;
+            }
+};
+int main ()
+{
+    employ e;
+    char n[]={"Ram"};
+    char a[]={"Kusunti"};
+    char c[]={"AI"};
+    e.getdata(n,11,a);
+    e.display();
+    e.setdata(1500,c);
+    e.show();
+    return 0;
+}
+
+
+==========================================================================================================
+
+4).
+
+#include <iostream>
+#include <iomanip>
+#include <string.h>
+using namespace std;
+class student
+{
+    char name[20];
+    int roll;
+    public:
+            void getstd (char nm[],int r)
+            {
+              strcpy(name,nm);
+              roll=r;
+            }
+            void dispstd()
+            {
+                cout<<"Name: "<<name<<"\nRoll: "<<roll<<endl;
+            }
+};
+class lecturer
+{
+    char lecnam[20];
+    int age;
+    public:
+    void setlec (char nm[],int a)
+    {
+      strcpy (lecnam,nm);
+      age=a;
+    }
+    void displec ()
+    {
+        cout<<"Lecturer name: "<<lecnam<<"\nAge: "<<age<<endl;
+    }
+
+
+};
+class book: public student, public lecturer
+{
+    char bocnam[20];
+    int price;
+    public:
+        void setbok (char nm[],int p)
+        {
+          strcpy (bocnam,nm);
+          price=p;
+        }
+        void dispboc ()
+        {
+            cout<<"Book name: "<<bocnam<<"\nPrice: "<<price<<endl;
+        }
+
+
+};
+int main ()
+{
+    book b;
+    char s[20]={"Bijay"},l[20]={" BS "},c[20]={"OOP"};
+    b.getstd(s,11);
+    b.setlec(l,45);
+    b.setbok(c,1500);
+    b.dispstd();
+    b.displec();
+    b.dispboc();
+    return 0;
+
+}
+
+=================================================================================================
+5).
+
+===========================================================================================================
+6).
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+class shape
+{
+    protected:
+    int area1;
+
+  public:
+  shape ()
+  {
+      area1=0;
+  }
+
+
+  void areaof ()
+        {
+
+            cout<<"The Area is "<<area1<<endl;
+        }
+
+};
+class rectangle: public shape
+{
+    int length;
+  int breadth;
+  public:
+        rectangle (int a,int b)
+        {
+            length=a;
+      breadth=b;
+      //area=length*breadth;
+        }
+        void area ()
+        {
+            area1=length*breadth;
+        }
+
+
+};
+int main ()
+{
+    rectangle r(5,6);
+    r.area();
+    r.areaof();
+
+    return 0;
+}
+
+
+================================================================================================================
+
+7).
+
+#include <iostream>
+#include <iomanip>
+#include <string.h>
+using namespace std;
+class parent
+{
+protected:
+    char address[20];
+public:
+    void getadd (char add[])
+    {
+        strcpy(address,add);
+    }
+};
+class child: public parent
+{
+protected:
+    char name[20];
+public:
+    void getname (char nm[])
+    {
+        strcpy(name,nm);
+    }
+    void display ()
+    {
+        cout<<"The name is "<<name<<endl;
+    }
+};
+class student: public child
+{
+protected:
+    int roll , marks;
+public:
+    void input (int r, int m)
+    {
+        roll=r;
+        marks=m;
+    }
+    void dispall ()
+    {
+        cout<<"The Name is: "<<name<<endl;
+        cout<<"The Roll is: "<<roll<<endl;
+        cout<<"The Marks is: "<<marks<<endl;
+        cout<<"The Address is: "<<address<<endl;
+    }
+};
+int main()
+{
+    student s;
+    char nm[20]={"Bijay"},ad[20]={"Kathmandu"};
+    s.getname(nm);
+    s.getadd(ad);
+    s.input(11,576);
+    s.dispall();
+    return 0;
+}

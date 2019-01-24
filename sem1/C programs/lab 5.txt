@@ -1,0 +1,111 @@
+====================================================================
+1.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+int i=1,l,n;
+clrscr ();
+printf ("Enter a number:\n");
+scanf ("%d",&n);
+l=n;
+do
+ {
+ scanf ("%d",&n);
+ if (n>l)
+ l=n;
+ i++;
+ } while (i<5);
+ printf ("The largest is %d",l);
+ getch ();
+}
+
+====================================================================
+2.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+int i,n,t,s=0;
+clrscr ();
+printf ("Enter the terms:\n");
+scanf ("%d",&n);
+for (i=0;i<n;i++)
+ {
+ t=i*i+1;
+ s=s+t;
+
+ }
+printf ("The sum is %d",s);
+getch ();
+}
+
+====================================================================
+3.)->..................
+
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+int i,n,t=0,s=0;
+clrscr ();
+printf ("Enter the number of terms:\n");
+scanf ("%d",&n);
+for (i=1;i<=n;i++)
+  {
+  t=t+i;
+  s=s+t;
+  }
+printf ("The sum is %d\n",s);
+getch ();
+}
+
+====================================================================
+4.)->..................
+	
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+void main ()
+{
+int i,j,n,p=2,k=3;
+float t,s=0;
+clrscr ();
+printf ("Enter number of terms:\n");
+scanf ("%d",&n);
+for (i=1;i<=n;i++)
+  {
+  j=i+1;
+  t=pow(i,p)+pow(j,p)/k;
+  s=s+t;
+  k=k+1;
+  }
+printf ("The sum is %f\n",s);
+getch ();
+}
+
+====================================================================
+5.)->..................
+
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+int i,a=0,b=1,c=0;
+clrscr ();
+printf ("Fibonacci series upto term < 34 is\n");
+for (i=1;c<34;i++)
+  {
+  a=b;
+  b=c;
+  c=a+b;
+  printf ("%d, ",c);
+  }
+getch ();
+}
+
+

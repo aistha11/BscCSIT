@@ -1,0 +1,124 @@
+====================================================================
+1.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+clrscr();
+printf ("It is my First program");
+getch ();
+
+
+}
+
+====================================================================
+2.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+int a;
+float b;
+char c;
+clrscr ();
+printf ("Enter int, float and char:\n");
+scanf ("%d %f %c",&a,&b,&c);
+printf ("Integer is %d\nFloat is %f\nCharacter is %c",a,b,c);
+getch ();
+}
+
+====================================================================
+3.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+void main()
+{
+int a, b, c, s;
+float Ar;
+clrscr ();
+printf ("Enter three sides of a traingle\n");
+scanf ("%d %d %d",&a,&b,&c);
+s=(a+b+c)/2;
+Ar=sqrt(s*(s-a)*(s-b)*(s-c));
+printf ("The area of traingle is %f",Ar);
+getch ();
+}
+
+====================================================================
+4.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+char lc, uc;
+clrscr ();
+printf ("Enter a lowercase\n");
+scanf ("%c",&lc);
+uc=lc-32;
+printf ("The uppercase is %c\n",uc);
+getch ();
+}
+
+
+====================================================================
+5.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+int x, y, temp;
+clrscr ();
+printf ("Enter the value of x and y\n");
+scanf ("%d %d",&x,&y);
+printf ("Before swapping \nx=%d\ny=%d\n",x,y);
+temp=x;
+x=y;
+y=temp;
+printf ("After swapping \nx=%d\ny=%d",x,y);
+getch ();
+}
+
+====================================================================
+6.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+void main()
+{
+float phy, com, math,Av;
+clrscr ();
+printf ("Enter marks of Physics, computer and math\n");
+scanf ("%f%f%f",&phy,&com,&math);
+Av=((phy+com+math)/3.0);
+printf ("The average marks is %f",Av);
+getch ();
+}
+
+
+====================================================================
+7.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+int a,hr,temp,min,sec;
+clrscr ();
+printf ("Enter time in seconds\n");
+scanf ("%d",&a);
+hr=a/3600;
+temp=a%3600;
+min=temp/60;
+sec=min%60;
+printf ("The time is %d hour %d min %d sec\n",hr, min, sec);
+getch ();
+}
+
+

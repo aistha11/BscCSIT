@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1544363216 source:e:\sem3\cg\2house\main.cpp
+	<iostream>
+	<graphics.h>
+	<iomanip>
+

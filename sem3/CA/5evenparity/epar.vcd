@@ -1,0 +1,42 @@
+$date
+  Tue Jan 08 19:40:33 2019
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 6 ! a[5:0] $end
+$var reg 1 " pe $end
+$scope module evenparitys $end
+$var reg 6 # a[5:0] $end
+$var reg 1 $ pe $end
+$upscope $end
+$enddefinitions $end
+#0
+b000000 !
+0"
+b000000 #
+0$
+#1000000
+b000010 !
+1"
+b000010 #
+1$
+#2000000
+b011000 !
+0"
+b011000 #
+0$
+#3000000
+b111000 !
+1"
+b111000 #
+1$
+#4000000
+b111111 !
+0"
+b111111 #
+0$
+#5000000

@@ -1,0 +1,64 @@
+$date
+  Wed Dec 19 09:35:23 2018
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var reg 5 ! a[4:0] $end
+$var reg 5 " b[4:0] $end
+$var reg 5 # s[4:0] $end
+$var reg 1 $ cin $end
+$var reg 1 % cout $end
+$scope module paralleladders $end
+$var reg 5 & a[4:0] $end
+$var reg 5 ' b[4:0] $end
+$var reg 5 ( s[4:0] $end
+$var reg 1 ) cin $end
+$var reg 1 * cout $end
+$upscope $end
+$enddefinitions $end
+#0
+b00000 !
+b00000 "
+b00000 #
+0$
+0%
+b00000 &
+b00000 '
+b00000 (
+0)
+0*
+#1000000
+b01100 !
+b01000 "
+b10100 #
+b01100 &
+b01000 '
+b10100 (
+#2000000
+b00110 !
+b01100 "
+b10010 #
+b00110 &
+b01100 '
+b10010 (
+#3000000
+b11100 !
+b01110 "
+b01010 #
+1%
+b11100 &
+b01110 '
+b01010 (
+1*
+#4000000
+b11111 !
+b11111 "
+b11110 #
+b11111 &
+b11111 '
+b11110 (
+#5000000

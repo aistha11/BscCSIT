@@ -1,0 +1,189 @@
+====================================================================
+1.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+int a,s,c;
+clrscr ();
+printf ("Enter a number\n");
+scanf ("%d",&a);
+s=a*a;
+c=s*a;
+	if (a%2==0)
+	{
+	printf ("Even:\nIt's square is %d\nIt's cube is %d\n",s,c);
+	}
+	else
+	{
+	printf ("Odd:\nIt's cube is %d\n",c);
+	}
+	getch ();
+}
+
+====================================================================
+2.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+int a,x,y;
+clrscr ();
+printf ("Enter a number\n");
+scanf ("%d",&a);
+x=a%3;
+y=a%5;
+//if (x!=0)
+       //	printf ("It is not required number");
+if (x==0&&y!=0)
+	{printf ("It is divisibe by 3\n");}
+else if (x==0&&y==0)
+       {printf ("It is divisible by both\n");}
+else
+printf ("It is not required number\n");
+getch ();
+}
+
+====================================================================
+3.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+int a;
+clrscr ();
+printf ("Enter an age\n");
+scanf ("%d",&a);
+if (a>=0&&a<=10)
+printf ("He/she is Child\n");
+if (a>=11&&a<=19)
+printf ("He/she is teenager\n");
+if (a>=20&&a<=40)
+printf ("He/she is young");
+getch ();
+}
+
+====================================================================
+4.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+void main ()
+{
+float a, b, c, R1, R2;
+float disc, real, imag;
+clrscr ();
+printf ("Enter value a,b & c for ax^2+bx+c\n");
+scanf ("%f %f %f",&a,&b,&c);
+disc=b*b-4.0*a*c;
+real=-b/(2.0*a);
+imag=sqrt(abs(disc))/(2.0*a);
+if (a==0||b==0||c==0)
+	{
+	printf ("Roots cannot be determined\n");
+	}
+else
+	{
+	 if (disc < 0)
+		{
+		 printf ("Roots are imaginary\n");
+		 printf ("The Root1 is %f +i%f\n",real,imag);
+		 printf ("The Root2 is %f -i%f\n",real,imag);
+		}
+	 else if (disc==0)
+		{
+		printf ("Roots are real and equal\n");
+		R1=real;
+		R2=R1;
+		printf ("The Root1 is %f\nThe Root2 is %f\n",R1,R2);
+		}
+	 else if (disc > 0)
+		{
+		printf ("Roots are real and distinct\n");
+		R1=real+imag;
+		R2=real-imag;
+		printf ("The Root1 is %f\nThe Root 2 is %f\n",R1,R2);
+		}
+	}
+getch ();
+}
+
+====================================================================
+5.)->..................
+
+
+#include <stdio.h>
+#include <conio.h>
+//#include <math.h>
+void main ()
+{
+int cp, sp, p,l;  /*cp=costprice sp=sellprice p=profit l=loss*/
+float pp, lp;   /*pp=profit % and lp= loss % which can come in fraction*/
+clrscr ();
+printf ("Enter Cost price and Selling price\n");
+scanf ("%d%d",&cp,&sp);
+p=sp-cp;   /* ch to check the which is greater sp or cp*/
+if (p>=1)
+	{
+	// printf ("Profit is Rs.%d\n",p);
+	 pp=((p*100.0)/cp);
+	 printf ("Profit is Rs.%d\nProfit percentage is %f %\n",p,pp);
+	}
+else
+	{
+	l=cp-sp;
+	//printf ("The loss is Rs.%d\n",l);
+	lp=((l*100.0)/cp);
+	printf ("Loss is Rs.%d\nLoss percentage is %f %\n",l,lp);
+	}
+	getch ();
+}
+
+====================================================================
+6.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+char cs;
+clrscr ();
+printf ("Enter a letter\n");
+scanf ("%c",&cs);
+if (cs>='a'&&cs<='z')
+{
+printf ("It is lowercase\n");
+}
+else
+printf ("It is uppercase\n");
+getch ();
+
+}
+
+
+====================================================================
+7.)->..................
+
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+int a,x,t,z;
+clrscr ();
+printf ("Enter three digit number\n");
+scanf ("%d",&a);
+x=a/100;
+t=a%100;
+z=t%10;
+if (x==z)
+printf ("It is palindrome\n");
+else
+printf ("It is not palindrome\n");
+getch ();
+}
+
+

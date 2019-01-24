@@ -1,0 +1,174 @@
+1.)->...
+
+#include<stdio.h>
+#include<conio.h>
+#include<string.h>
+struct book
+{
+    int id;
+    float price;
+    char name[20];
+};
+void main()
+{
+    struct book b;
+    printf("\n enter book id");
+    scanf("%d",&b.id);
+    printf("\n enter book name");
+    scanf("%s",&b.name);
+    printf("\n enter book price");
+    scanf("%f",&b.price);
+    printf("\n id:%d\tname:%s\tprice:%f",b.id,b.name,b.price);
+    getch();
+}
+=============================================================================
+2)->.....
+
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+struct student
+{
+char name[20];
+int roll;
+int marks;
+};
+void main ()
+{
+  struct student s[5];
+  int i,h,x;
+  clrscr ();
+  for (i=0;i<5;i++)
+  {
+  printf ("Enter the contents of %d student:\n",i+1);
+  printf ("Name:");
+  gets(s[i].name);
+  printf ("Roll:");
+  scanf ("%d",&s[i].roll);
+  printf ("Marks:");
+  scanf ("%d",&s[i].marks);
+  fflush(stdin);
+  }
+  h=s[0].marks;
+  for (i=1;i<5;i++)
+  {
+    if (s[i].marks>h)
+     h=s[i].marks;
+    x=i;
+  }
+
+    printf ("The contents of student having marks is:\n",x);
+    printf ("Name: %s\nRoll: %d\nMarks: %d\n",s[x].name,s[x].roll,s[x].marks);
+
+  getch ();
+}
+
+
+=======================================================================================
+
+3.)->.......
+
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+struct data { int day; int month; int year;};
+struct employee
+{
+char name [10];
+data dob;
+int id;
+};
+void main ()
+{
+struct employee e;
+clrscr ();
+printf ("Enter the content of employee:\n");
+printf ("Name: ");
+gets(e.name);
+printf ("Dob as (day month year):\n");
+scanf ("%d%d%d",&e.dob.day,&e.dob.month,&e.dob.year);
+printf ("ID:\n");
+scanf ("%d",&e.id);
+printf ("Employee content is :\n");
+printf ("Name:%s\nDOB:%d/%d/%d\nID:%d",e.name,e.dob.day,e.dob.month,e.dob.year,e.id);
+getch ();
+}
+
+
+============================================================================
+4).->....
+
+#include <stdio.h>
+#include <conio.h>
+#include <string.h>
+struct complex
+{
+int r;int im;};
+void display(struct complex ,struct complex);
+void main ()
+{
+struct complex c1={1,2};
+struct complex c2={3,4};
+clrscr ();
+display (c1,c2);
+getch ();
+}
+void display (struct complex x,struct complex y)
+{
+struct complex c3;
+c3.r=x.r+y.r;
+c3.im=x.im+y.im;
+printf ("Result is %d+%di",c3.r,c3.im);
+getch ();
+}
+
+
+===========================================================================
+5).->.........
+
+#include<stdio.h>
+#include<conio.h>
+
+struct dist
+{
+    int feet;
+    int inch;
+};
+struct dist sum(struct dist,struct dist);
+struct dist diff(struct dist,struct dist);
+void main()
+{
+
+    struct dist d1={21,10};
+    struct dist d2={8,9};
+    struct dist s,d;
+    s=sum(d1,d2);
+    d=diff(d1,d2);
+    printf("\n Sum is %d feet %d inch",s.feet,s.inch);
+    printf("\n Difference is %d feet %d inch",d.feet,d.inch);
+    getch();
+
+}
+struct dist sum(struct dist d1,struct dist d2)
+{
+    struct dist d3;
+    d3.inch=d1.inch+d2.inch;
+    if(d3.inch>=12)
+    {
+        d3.feet=d1.feet+d2.feet+1;
+        d3.inch=d3.inch-12;
+    }
+    else
+        d3.feet=d1.feet+d2.feet;
+    return(d3);
+
+}
+struct dist diff(struct dist d1,struct dist d2)
+{
+    struct dist d3;
+    d3.inch=d1.inch-d2.inch;
+    d3.feet=d1.feet-d2.feet;
+
+    return(d3);
+
+}

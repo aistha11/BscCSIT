@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1543398896 source:c:\users\dell\desktop\finalproject\main.cpp
+	<iostream>
+	<iomanip>
+	<istream>
+	<string.h>
+	<fstream>
+	<stdlib.h>
+	<graphics.h>
+

@@ -1,0 +1,192 @@
+1.)>..........................
+
+#include <stdio.h>
+#include <conio.h>
+int large (int ,int ,int );
+void main ()
+{
+int l,a,b,c;
+clrscr ();
+printf ("Enter three numbers:\n");
+scanf ("%d%d%d",&a,&b,&c);
+l=large(a,b,c);
+printf ("The largest is %d.\n",l);
+getch ();
+}
+int large (int x,int y,int z)
+{
+if (x>y&&x>z)
+return x;
+else if (y>x&&y>z)
+return y;
+else
+return z;
+}
+
+==================================================================
+2.)>..........................
+
+#include <stdio.h>
+#include <conio.h>
+int power (int,int);
+void main ()
+{
+int x,n,r;
+clrscr ();
+printf ("Enter the value of x and n for y=x^n.\n");
+scanf ("%d%d",&x,&n);
+r=power (x,n);
+printf ("The value of y is %d",r);
+getch ();
+}
+int power (int a,int b)
+  {
+  int i,p=1;
+  for (i=1;i<=b;i++)
+      {
+      p=p*a;
+      }
+  return p;
+  }
+
+
+==================================================================
+3.)>..........................
+
+#include <stdio.h>
+#include <conio.h>
+float opr (int ,char , int );
+void main ()
+{
+char op;
+int a,b;
+float r;
+clrscr ();
+printf ("Enter first operand:");
+scanf ("%d",&a);
+printf ("Enter operator:");
+scanf (" %c",&op);
+printf ("Enter second operand:");
+scanf ("%d",&b);
+r=opr(a,op,b);
+printf ("The result is %f",r);
+getch ();
+}
+float opr (int x,char o,int y)
+  {
+  float rt;
+  switch (o)
+    {
+     case '+': rt=x+y;  break;
+     case '-': rt=x-y;  break;
+     case '*': rt=x*y;  break;
+     case '/': rt=x/y;  break;
+    }
+    return rt;
+  }
+
+
+==================================================================
+4.)>..........................
+
+
+
+#include <stdio.h>
+#include <conio.h>
+int palin(int x);
+void main ()
+{
+int n,rev;
+clrscr ();
+printf ("Enter a number:\n");
+scanf ("%d",&n);
+rev= (palin(n));
+if (rev==n)
+printf ("Palindrome.");
+else
+printf ("Not Palindrome.");
+getch ();
+}
+
+int palin(int x)
+  {
+  int d,r=0;
+  do
+    {
+    d=x%10;
+    r=r*10+d;
+    x=x/10;
+    }while (x!=0);
+    return r;
+  }
+
+==================================================================
+5.)>..........................
+
+
+#include <stdio.h>
+#include <conio.h>
+int fib (int );
+void main ()
+{
+int i,n;
+clrscr ();
+printf ("Enter no of terms:\n");
+scanf ("%d",&n);
+for (i=0;i<=n;i++)
+{
+printf ("%d, ",fib (i));
+}
+getch ();
+
+}
+int fib (int f)
+ {
+ if (f<=0)
+ return 0;
+ else if (f==1)
+ return 1;
+ else
+ return (fib (f-1)+fib (f-2));
+ }
+
+
+==================================================================
+6.)>..........................
+
+
+
+#include <stdio.h>
+#include <conio.h>
+void prime (int ,int );
+void main ()
+{
+int a,b;
+clrscr ();
+printf ("Enter initial range:");
+scanf ("%d",&a);
+printf ("Enter final range:");
+scanf ("%d",&b);
+prime (a,b);
+getch ();
+}
+void prime (int x,int y)
+  {
+  int i,j,c;
+  for (i=x;i<=y;i++)
+    {c=0;
+    for (j=1;j<=i;j++)
+      {
+      if (i%j==0)
+      c=c+1;
+      }
+      if (c==2)
+      printf ("%d, ",i);
+    }
+  }
+
+==================================================================
+7.)>..........................
+
+
+

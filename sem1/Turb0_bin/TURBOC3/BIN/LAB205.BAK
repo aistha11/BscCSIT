@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+void main ()
+{
+int cp, sp, p,l,ch;  /*cp=costprice sp=sellprice p=profit l=loss*/
+float pp, lp;   /*pp=profit % and lp= loss % which can come in fraction*/
+clrscr ();
+printf ("Enter Cost price and Selling price\n");
+scanf ("%d%d",&cp,&sp);
+ch=sp-cp;   /* ch to check the which is greater sp or cp*/
+if (ch>=1)
+	{
+	 p=sp-cp;
+	// printf ("Profit is Rs.%d\n",p);
+	 pp=((p*100.0)/cp);
+	 printf ("Profit is %d\nProfit percentage is %f %\n",p,pp);
+	}
+else
+	{
+	l=cp-sp;
+	printf ("The loss is Rs.%d\n",l);
+	lp=((l*100.0)/cp);
+	printf ("The loss percentage is %f %\n",lp);
+	}
+	getch ();
+}

@@ -21,7 +21,7 @@ int main ()
     cout<<"Enter the reflecting vector:\ny = ";
     cin>>ry;
     //axix
-    line(0,ry,500,ry);
+    line(1,ry,500,ry);
     //displaying poly
     int arr[]={x[0],y[0],x[1],y[1],x[2],y[2],x[3],y[3],x[0],y[0]};
     drawpoly(5,arr);

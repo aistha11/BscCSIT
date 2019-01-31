@@ -47,7 +47,7 @@ void delfromend(struct node **plist)
     }
     else if (temp->next==NULL)
     {
-        *plist==NULL;
+        *plist=NULL;
     }
     else
     {

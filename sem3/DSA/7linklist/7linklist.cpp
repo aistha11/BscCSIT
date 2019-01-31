@@ -77,7 +77,7 @@ void delfrombeg (struct node **plist)
     *plist=temp->next;
     free(temp);
 }
-void delfromend (struct node **plist)
+void delfromend(struct node **plist)
 {
     struct node *temp,*prev;
     temp=*plist;
@@ -88,7 +88,7 @@ void delfromend (struct node **plist)
     }
     else if (temp->next==NULL)
     {
-        *plist==NULL;
+        *plist=NULL;
     }
     else
     {
@@ -116,6 +116,7 @@ void delanode (struct node **plist,int num)
         {
             prev=temp;
             temp=temp->next;
+
         }
         else
         {
@@ -127,8 +128,29 @@ void delanode (struct node **plist,int num)
             {
                 prev->next=temp->next;
             }
+            return;
         }
     }
+    cout<<"\n\t\tNode Not Found.";
+    free(temp);
+}
+void delatpos (struct node **plist,int num)
+{
+    struct node *temp,*prev;
+    int i;
+    temp=*plist;
+
+        for(i=1;i<num;i++)
+        {
+            if(temp->next==NULL)
+                {
+                    cout<<"\n\t\tInsufficient node.\n";
+                    return;
+                }
+            prev=temp;
+            temp=temp->next;
+        }
+        prev->next=temp->next;
     free(temp);
 }
 int main ()
@@ -152,8 +174,11 @@ int main ()
     cout<<"Deleting From End.\n";
     delfromend(&lists);
     display(lists);
-    cout<<"Deleting Second Node.\n";
-    delanode(&lists,2);
+    cout<<"Deleting Node 10.\n";
+    delanode(&lists,10);
+    display(lists);
+    cout<<"Deleting node at position 2\n";
+    delatpos(&lists,2);
     display(lists);
     return 0;
 }

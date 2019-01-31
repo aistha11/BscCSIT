@@ -24,7 +24,7 @@ int main ()
     for(i=0;i<n;i++)
     {
         dd[i]=fx[i];
-        printf("\t\t%f = %f",i,dd[i]);
+        printf("\n\t\t%f = %f",i,dd[i]);
     }
 
     for(i=0;i<n;i++)

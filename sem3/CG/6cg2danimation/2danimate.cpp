@@ -10,7 +10,8 @@ void draw(int x)
     line(500,60,500,115);
     setcolor(GREEN);
     rectangle(500,60,520,80);
-    getch ();
+    //getch ();
+    delay(10);
     cleardevice();
 }
 int main ()
@@ -26,6 +27,7 @@ int main ()
     draw(500);
     for (i=500;i>=30;i--)
     {
+        //delay(10);
         draw(i);
     }
     getch ();

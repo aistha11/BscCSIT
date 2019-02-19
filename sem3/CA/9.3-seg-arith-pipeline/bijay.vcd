@@ -1,0 +1,152 @@
+$date
+  Tue Feb 19 16:30:19 2019
+$end
+$version
+  GHDL v0
+$end
+$timescale
+  1 fs
+$end
+$var integer 32 ! a $end
+$var integer 32 " b $end
+$var integer 32 # c $end
+$var integer 32 $ y $end
+$var reg 1 % clk $end
+$scope module bijay $end
+$var integer 32 & a $end
+$var integer 32 ' b $end
+$var integer 32 ( c $end
+$var reg 1 ) clk $end
+$var integer 32 * y $end
+$var integer 32 + r1 $end
+$var integer 32 , r2 $end
+$var integer 32 - r3 $end
+$var integer 32 . r4 $end
+$var integer 32 / r5 $end
+$var integer 32 0 r6 $end
+$upscope $end
+$enddefinitions $end
+#0
+b10 !
+b11 "
+b100 #
+b0 $
+0%
+b10 &
+b11 '
+b100 (
+0)
+b0 *
+b0 +
+b0 ,
+b0 -
+b0 .
+b0 /
+b0 0
+#1000000
+1%
+1)
+b10 +
+b11 ,
+b100 -
+#2000000
+b11 !
+b101 "
+b10 #
+0%
+b11 &
+b101 '
+b10 (
+0)
+#3000000
+1%
+1)
+b11 +
+b101 ,
+b10 -
+b110 .
+b100 /
+#4000000
+b100 !
+b1 "
+b11 #
+0%
+b100 &
+b1 '
+b11 (
+0)
+#5000000
+b1010 $
+1%
+1)
+b1010 *
+b100 +
+b1 ,
+b11 -
+b1111 .
+b10 /
+b1010 0
+#6000000
+b10 !
+b11 "
+b100 #
+0%
+b10 &
+b11 '
+b100 (
+0)
+#7000000
+b10001 $
+1%
+1)
+b10001 *
+b10 +
+b11 ,
+b100 -
+b100 .
+b11 /
+b10001 0
+#8000000
+0%
+0)
+#9000000
+b111 $
+1%
+1)
+b111 *
+b110 .
+b100 /
+b111 0
+#10000000
+0%
+0)
+#11000000
+b1010 $
+1%
+1)
+b1010 *
+b1010 0
+#12000000
+0%
+0)
+#13000000
+1%
+1)
+#14000000
+0%
+0)
+#15000000
+1%
+1)
+#16000000
+0%
+0)
+#17000000
+1%
+1)
+#18000000
+0%
+0)
+#19000000
+1%
+1)

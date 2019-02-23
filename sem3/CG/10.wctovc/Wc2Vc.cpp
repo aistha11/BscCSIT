@@ -18,8 +18,9 @@ int main ()
     }
 
     int arr[]={x[0],y[0],x[1],y[1],x[2],y[2],x[3],y[3],x[0],y[0]};
-    setfillstyle(7,3);
+    //setfillstyle(7,3);
     drawpoly(5,arr);
+    //floodfill(x[0]+10,y[0]+10,WHITE);
     //viewport coordinates
    float xdmn=20,xdmx=90,ydmn=20,ydmx=90;
    rectangle(xdmn,ydmx,xdmx,ydmn);
@@ -32,11 +33,12 @@ int main ()
     {
        xd[i]=x[i]*sx-xwmn*sx+xdmn;
        yd[i]=y[i]*sy-ywmn*sy+ydmn;
-       cout<<"xd"<<i<<" = "<<xd<<"yd"<<i<<" = "<<yd<<endl;
+       cout<<"xd"<<i<<" = "<<xd[i]<<"\tyd"<<i<<" = "<<yd[i]<<endl;
     }
     int arr1[]={xd[0],yd[0],xd[1],yd[1],xd[2],yd[2],xd[3],yd[3],xd[0],yd[0]};
-    setfillstyle(9,2);
+    //setfillstyle(9,2);
     drawpoly(5,arr1);
+    //floodfill(xd[0]+10,yd[0]+10,WHITE);
 
    getch();
    closegraph();

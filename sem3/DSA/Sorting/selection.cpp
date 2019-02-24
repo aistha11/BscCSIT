@@ -8,7 +8,7 @@ void selection (int a[],int n)
     {
        for (c=s;c<=n-1;c++)
             {
-               if(a[s-1]<a[c])
+               if(a[s-1]>a[c])
                {
                    temp=a[s-1];
                    a[s-1]=a[c];

@@ -1,6 +1,14 @@
 #include <stdio.h>
 #include <conio.h>
 #include <math.h>
+void display (float dd[100],int n)
+{
+    printf("\n");
+    for (int i=0; i<n;i++)
+    {
+        printf(" \t %f , ",dd[i]);
+    }
+}
 int main ()
 {
     int i,j,n;
@@ -24,13 +32,21 @@ int main ()
     for(i=0;i<n;i++)
     {
         dd[i]=fx[i];
-        printf("\n\t\t%f = %f",i,dd[i]);
+        printf("\n\t\t%f = %f",dd[i],fx[i]);
     }
 
     for(i=0;i<n;i++)
     {
         for(j=n-1;j>i;j--)
+        {
+            //printf("%f = ( %f - %f )/ ( %f - %f )\n",dd[j],dd[j],dd[j-1],x[j],x[j-i-1]);
+            printf("\nBefore: ");
+            display(dd,n);
             dd[j]=((dd[j]-dd[j-1])/(x[j]-x[j-i-1]));
+            printf("\nAFter: ");
+            display(dd,n);
+
+        }
     }
     for(i=0;i<n;i++)
     {

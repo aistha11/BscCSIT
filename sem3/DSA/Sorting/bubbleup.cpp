@@ -1,18 +1,10 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
-int main ()
+void bubble (int a[],int n)
 {
-    int a[5]={8,7,3,12,2}, s,c,temp;
-    //before sort
-    cout<<"Before Sorting \n";
-    for (s=0;s<5;s++)
-    {
-       //cout<<"a"<<s<<" = "<<a[s]<<endl;
-       cout<<a[s]<<endl;
-    }
-    //sorting
-    for (s=1;s<=4;s++)
+    int s,c,temp;
+   for (s=1;s<=4;s++)
     {
        for (c=4;c>=s;c--)
             {
@@ -24,6 +16,19 @@ int main ()
                }
             }
     }
+}
+int main ()
+{
+    int a[5]={8,7,3,12,2}, s,c,temp;
+    //before sort
+    cout<<"Before Sorting \n";
+    for (s=0;s<5;s++)
+    {
+       //cout<<"a"<<s<<" = "<<a[s]<<endl;
+       cout<<a[s]<<endl;
+    }
+    //sorting
+    bubble(a,5);
     //after sort
     cout<<"\nAfter Sorting \n";
     for (s=0;s<5;s++)

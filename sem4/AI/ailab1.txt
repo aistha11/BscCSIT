@@ -1,0 +1,44 @@
+https://colab.research.google.com/notebooks/welcome.ipynb#recent=true
+Lab1: demonstrate use python programming constraints
+1. write a python program to print multiplication table of entered 
+
+n= int(input("Enter a Number"))
+for i in range (1,11):
+	r=n*i;
+	print(n,"x","=",r)
+
+2. write a python program to determine whether enter number is prime
+
+u= int(input("Enter a Number"))
+if(n>1)
+	for i in range(2,int(n/2)):
+		rem=n%i
+		if(rem==0)
+		break
+	if(rem==0):
+		print(n,"is not prime")
+	else:
+		print(n,"is prime")
+
+3. write a python program to find factorial of entered number using function
+
+def factorial(n):
+  if(n==1):
+    return 1
+  else:
+    return n*factorial(n-1)
+  
+n=int(input("Enter a number"))
+if(n<0):
+  print("Factorial cannot be calculated for negative number")
+elif(n==0):
+  print("Factorial is 1")
+else:
+  f=factorial(n)
+print("Factorial of",n,"is",f)
+
+4. write a python program to compute x^n using loop
+
+
+
+5.write a python program to compute x^n using recursive function

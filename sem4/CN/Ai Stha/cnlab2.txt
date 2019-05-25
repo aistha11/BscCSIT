@@ -1,0 +1,31 @@
+lab2cn: practice on basic networking commands
+
+theory: command line interface(dos)
+-> ipconfig : to find ip
+	Syntax: C:\>ipconfig
+	Eg: C:\>ipconfig
+	
+-> ping
+	Syntax: ping <address>
+	Eg: ping 192.168.10.1
+-> pathping: 
+	Syntax: pathping <address>
+	Eg: pathping 192.168.10.1
+-> hostname : to find the computer name
+	Syntax: hostname
+	Eg: hostname
+-> netstat: to listening the port
+	Syntax:
+	Eg:
+-> tracert: to trace the route
+	Syntax: tracert <address>
+	Eg:  tracert google.com
+-> route: to determine the routing table
+	Syntax: route print
+	Eg: route print
+-> nslookup: 
+	Syntax: nslookup
+	Eg: nslookup
+-> getmac : To get the mac address
+	Syntax: getmac
+	Eg: getmac

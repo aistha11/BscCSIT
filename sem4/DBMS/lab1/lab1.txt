@@ -1,0 +1,58 @@
+https://apex.oracle.com/en/
+
+course page
+title/objective
+theory
+sql
+output (pencil even page)
+discussion
+conclusion
+
+Workspace: dj
+Username: joshi.dibya@gmail.com
+PAssword : p@55apex
+
+1. to list the records from emps table
+-> select * from emps;
+
+2. list name, job and salary of all employee
+-> select EMPLOYEE_NAME,JOB,SALARY from emps;
+
+3. retrieve record all employee who workers as CLERK
+-> select * from emps where JOB='CLERK';
+
+4. retrieve record all employee who workers as CLERK  (in department int 20)
+-> select * from emps where JOB='CLERK' and DEPARTMENT_ID='20';
+
+5. retrieve name, employee_ID, job, of all employee who is either manager or analyst
+-> select EMPLOYEE_NAME,EMPLOYEE_ID,JOB from emps where JOB='MANAGER' or JOB='ANALYST';
+
+6. retrieve record of all employee except president
+-> select * from emps where JOB<>'PRESIDENT';
+
+7. retrieve record of employee who earn between 800 & 2000 as salary
+-> select EMPLOYEE_NAME from emps where SALARY between 800 and 2000 ;
+
+8. list all different titles in this organization
+-> select distinct(JOB) from emps;
+
+9. list name of employee with starting letter 't'
+-> select EMPLOYEE_NAME from emps where EMPLOYEE_NAME like 'T%' ;
+
+10. list name of employee with starting letter 'S' and end with 'h'
+-> select EMPLOYEE_NAME from emps where EMPLOYEE_NAME like 'S%H';
+
+
+select * from emps;
+select EMPLOYEE_NAME,JOB,SALARY from emps;
+select * from emps where JOB='CLERK';
+select * from emps where JOB='CLERK' and DEPARTMENT_ID='20';
+select EMPLOYEE_NAME,EMPLOYEE_ID,JOB from emps where JOB='MANAGER' or JOB='ANALYST';
+select * from emps where JOB<>'PRESIDENT';
+select EMPLOYEE_NAME from emps where SALARY between 800 and 2000 ;
+select distinct(JOB) from emps;
+select EMPLOYEE_NAME from emps where EMPLOYEE_NAME like 'T%' ;
+select EMPLOYEE_NAME from emps where EMPLOYEE_NAME like 'S%H';
+
+
+

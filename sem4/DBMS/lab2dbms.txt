@@ -8,7 +8,7 @@ Lab2: create table and DML query- INSERT, UPDATE, DELETE
  empid         NUMBER                      PRIMARY KEY,
  Name           VARCHAR2(15)    NOT NULL,    
  Phone          NUMBER          NOT NULL,
- description    VARCHAR2(20) ,   
+ designation    VARCHAR2(20) ,   
  hiredate       DATE            NOT NULL,
  salary         NUMBER          NOT NULL,
  commission     NUMBER          NOT NULL,
@@ -21,7 +21,7 @@ CREATE TABLE bjstha11emp
 empid NUMBER PRIMARY KEY,
 name VARCHAR2(15) NOT NULL,
 phone NUMBER NOT NULL,
-description VARCHAR2(20),
+designation VARCHAR2(20),
 hiredate DATE NOT NULL,
 salary NUMBER NOT NULL,
 commission NUMBER,
@@ -30,10 +30,11 @@ deptno NUMBER NOT NULL
 
 2> Insert data into table employees.
 
-INSERT INTO bjstha11emp (empid, name, phone, description, hiredate, salary, commission, deptno) values (101, 'Bijay', 9845672899, 'Student', '11/11/2019', 9000, 2500, 11);
-INSERT INTO bjstha11emp (empid, name, phone, description, hiredate, salary, commission, deptno) values (111, 'Xitiz', 9845892899, 'Marketer', '11/23/2019', 12000, 5000, 11);
-INSERT INTO bjstha11emp (empid, name, phone, description, hiredate, salary, commission, deptno) values (102, 'Gaurav', 9860678393, 'Investor', '05/20/2019', 120000, 9500, 10);
-INSERT INTO bjstha11emp (empid, name, phone, description, hiredate, salary, commission, deptno) values (112, 'David', 9876052637, 'Editor', '08/11/2019', 32000, 5080, 10);
+INSERT INTO bjstha11emp (empid, name, phone, designation, hiredate, salary, commission, deptno) values (101, 'Bijay', 9845672899, 'Student', '11/11/2019', 9000, 2500, 11);
+INSERT INTO bjstha11emp (empid, name, phone, designation, hiredate, salary, commission, deptno) values (111, 'Xitiz', 9845892899, 'Marketer', '11/23/2019', 12000, 5000, 11);
+INSERT INTO bjstha11emp (empid, name, phone, designation, hiredate, salary, commission, deptno) values (102, 'Gaurav', 9860678393, 'Investor', '05/20/2019', 120000, 9500, 10);
+INSERT INTO bjstha11emp (empid, name, phone, designation, hiredate, salary, commission, deptno) values (112, 'David', 9876052637, 'Editor', '08/11/2019', 32000, 5080, 10);
+INSERT INTO bjstha11emp values (113, 'Bishal', 9876458627, 'Coder', '02/05/2019', 132000, 10080, 11);
 
 
 3> *increase the salary of all employees by rs 1000
@@ -41,5 +42,14 @@ INSERT INTO bjstha11emp (empid, name, phone, description, hiredate, salary, comm
 * increase the salary of first employees by rs 5000
 ->UPDATE bjstha11emp SET salary=salary+5000 where empid=101;
 
-4> input the phone as 444444 for bijay employee with empid=101
-->
+4> input the phone as 9823592792 for bijay employee with empid=101
+->UPDATE bjstha11emp SET phone=9823592792 where empid=101;
+
+5> Add 1000 commission for Employee who started work as coder
+->UPDATE bjstha11emp SET commission=commission+1000 where designation='coder';
+
+6> record promotion for David with empid 102 as Assistant manager
+->UPDATE bjstha11emp SET designation='Assistant Manager' where empid=112;
+
+7> delete the records for all clerk who work on dept 10 
+-> DELETE FROM bjstha11emp where designation='Clerk' and deptno=10;

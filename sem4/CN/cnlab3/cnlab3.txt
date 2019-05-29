@@ -1,0 +1,17 @@
+lab 3: overview of IP Addresss and Sbnetting, static IP on Windows machine, testing
+
+IP address: 
+	numerical representation
+	uniquely identify the interface or network
+	public Ip vs Private Ip
+	classes of ip
+subnet
+	n/w address
+	host address
+ncpa.cpl to open setting
+ipconfig/all
+
+
+file/folder sharing
+
+create a folder im any drive

@@ -32,28 +32,32 @@ int transition (int q, char ch)
    switch (q)
    {
         case 0:
-                if(ch=='a')
+                q=((ch=='a')?1:3);
+                /*if(ch=='a')
                     q=1;
                 else
-                    q=3;
+                    q=3;*/
                 break;
         case 1:
-                if(ch=='a')
+                q=((ch=='a')?2:4);
+                /*if(ch=='a')
                     q=2;
                 else
-                    q=4;
+                    q=4;*/
                 break;
         case 2:
-                if(ch=='a')
+                q=((ch=='a')?1:3);
+                /*if(ch=='a')
                     q=1;
                 else
-                    q=3;
+                    q=3;*/
                 break;
         case 3:
-                if(ch=='a')
+                q=((ch=='a')?4:3);
+                /*if(ch=='a')
                     q=4;
                 else
-                    q=3;
+                    q=3;*/
                 break;
         default: break;
 

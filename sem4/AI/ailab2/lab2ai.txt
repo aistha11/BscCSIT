@@ -1,0 +1,28 @@
+lab2ai: 
+
+1.write a python program to implement different list operations
+
+-read elements of list
+-display list elements
+-display third element
+-display elements from index 3 to index n-1
+-insert new element at index 3
+-display list elements
+-display length of list
+-concatenate two lists
+-display list elements
+
+2.write a program to demonstrate 2D list
+
+-read elements of first list of order n*m
+-read elements of second list of order n*m
+-add two list
+-display all three lists
+-display last row of result
+
+3. write a python program to demonstrate numpy arrays
+
+-read elements of two 2D array
+-convert 2D lists into numpy arrays
+-perform operation, element wise miltiplication, miltiplication, and transpose
+ 

@@ -1,0 +1,38 @@
+lab4:
+
+Introduction to packet tracer, creating of a lan amd connectivity test in the LAN creation of VLAN truncking
+
+Theory:
+
+Pacxket tracer:
+Packet Tracer is a cross-platform visual simulation tool designed by Cisco Systems that allows users to create network topologies and imitate modern
+ computer networks.The software allows users to simulate the configuration of Cisco routers and switches using a simulated command line interface.
+
+Virtual LAN:
+A virtual LAN (VLAN) is any broadcast domain that is partitioned and isolated in a computer network at the data link layer (OSI layer 2).
+ LAN is the abbreviation for local area network and in this context virtual refers to a physical object recreated and altered by additional logic.
+The basic reason for splitting a network into VLANs is to reduce congestion on a large LAN. We also create VLAN for security purpose.
+
+
+VLAN tracking:
+VLAN Trunking Protocol (VTP) is a Cisco proprietary protocol that propagates the definition of Virtual Local Area Networks (VLAN) 
+on the whole local area network. To do this, VTP carries VLAN information to all the switches in a VTP domain. VTP advertisements can be sent over 802.1Q, 
+and ISL trunks.
+
+
+Create VLAN Database
+click on swith and go to config we see VLAN database and add vlan number and vlan name
+click on router and go to config we see VLAN database and add vlan number and vlan name
+
+cli:
+exit -> to exit
+enable -> 
+config t ->
+int fas 0/1 ->
+
+en ->
+encapsulation dot
+encapsulation dot1Q Vlannumber ->
+int fas 0.1.20
+
+ip address 192.168.2.1 255.255.255.0

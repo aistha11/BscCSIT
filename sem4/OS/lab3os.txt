@@ -12,7 +12,7 @@ program:-
 int main (int argc,char *argv)
 {
   printf("The number of arguement is : %d \n",argc);
-  int i,s=0;
+  int i;
 	for(i=0;i<argc;i++)
 	{
 		printf("argv[%d] = %s",i,argv[i]);

@@ -1,0 +1,51 @@
+slab 4: process creation and returning their ids
+
+i) fork() -  creates new process
+ii getpid() - no arguement
+ii getppid() - returns integer value (pid)
+
+program 1
+#include <stdio.h>
+#include <unistd.h>
+int main ()
+{
+printf("Demonstration of fork system call");
+fork();
+fork();
+printf("The statement after the fork system call");
+
+}
+
+program 2
+
+#include <stdio.h>
+#include <unistd.h>
+int main ()
+{
+printf("Demonstration of getpid & getppid");
+int pid,ppid;
+pid=getpid();
+ppid=getppid();
+printf("The process id is %d",pid);
+printf("The parent process id is %d",ppid);
+
+}
+
+program 3
+
+#include <stdio.h>
+#include <unistd.h>
+int main ()
+{
+printf("Demonstration of value returned by fork system call");
+int pid;
+pid=fork();
+if(pid!=0)
+	printf("\nThe parent id is %d\n",pid);
+else
+{
+	printf("\nThe child pid is %d",pid);
+	printf("\nThe parent pid is %d",(int)getppid());
+}
+
+}

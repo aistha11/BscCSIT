@@ -1,0 +1,41 @@
+lab5: manipulating the process state
+
+Program1
+#include <stdio.h>
+#include<stdlib.h>
+#include<unistd.h>
+#include<sys/wait.h>
+#include<sys/types.h>
+int main ()
+{
+	int pid=fork;
+	if(pid==0)
+	{
+		printf("I am the child, my pid is %d\n",(int)getpid());
+		printf("My parent's pid is %d\n",(int)getppid());
+		sleep(11);
+		printf("I am the child, my pid is %d\n",(int)getpid());
+		printf("My parent's pid is %d\n",(int)getppid());
+	}
+	else
+	{
+		sleep(6);
+		printf("I am the child, my pid is %d\n",(int)getpid());
+		printf("My parent's pid is %d\n",(int)getppid());
+		wait(0);
+	}
+}
+
+Program 2: run the program below and analyze the switching behaviour of process
+
+#include <stdio.h>
+#include<unistd.h>
+int main ()
+{
+	int pid;
+	pid=fork();
+	if(pid==0)
+	{for(;;)printf("Child");}
+	else
+	{for(;;)printf("Parent");}
+}

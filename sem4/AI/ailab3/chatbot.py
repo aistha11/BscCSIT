@@ -1,4 +1,4 @@
-print("Simple Chatboat System")
+print("Simple Chatbot System")
 print("************************")
 print("You May Ask One Of These Question")
 print("Hi")
@@ -18,6 +18,8 @@ while True:
     print("Yes, I work as a CEO of Google.")
   elif question in ['what did you do yesterday?']:
     print("I played football in futsal")
+  elif question in ['what is your name?','who are you?']:
+      print("My name is AI.")
   elif question in ['bye']:
     print("Bye Bye.. Have a good day")
   else:

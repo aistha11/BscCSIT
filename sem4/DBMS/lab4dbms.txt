@@ -1,24 +1,28 @@
 lab 4: to be familiarize with aggregate function
 
 SELECT * FROM employee;
-ALTER TABLE employee add designation varchar2(25);
-INSERT INTO employee values (11,'Bale','Gareth','balegareth@gmail.com',10,'1005000','analyst');
-DELETE FROM employee where id=3;
+
 SELECT AVG(salary) FROM employee;
-SELECT MAX(salary) FROM employee;
-SELECT MIN(salary) FROM employee;
-SELECT MAX(salary) as MAX_SALARY FROM employee;
 SELECT ROUND(AVG(salary),2) as AVG_SALARY FROM employee;
+SELECT ROUND(AVG(salary),2) as AVG_SALARY FROM employee where dept_id=10;
+
+SELECT MAX(salary) FROM employee;
+SELECT MAX(salary) as MAX_SALARY FROM employee;
+SELECT MAX(salary) as MAX_SALARY FROM employee where dept_id=10;
+
+SELECT MIN(salary) as MIN_SALARY FROM employee;
+
 SELECT COUNT(*) FROM employee;
 SELECT COUNT(first_name) FROM employee;
 SELECT COUNT(*) FROM employee where dept_id=10;
-DESC employee;
-SELECT MAX(salary) as MAX_SALARY FROM employee where dept_id=10;
-SELECT ROUND(AVG(salary),2) as AVG_SALARY FROM employee where dept_id=10;
+
+
 SELECT SUM(salary) FROM employee;
+
 SELECT first_name,NVL(salary,0) FROM employee;
 SELECT first_name,salary from employee where designation='analyst' and dept_id=10;
-Update employee set designation='developer' where dept_id=10;
+
 SELECT * FROM employee ORDER BY first_name DESC;
 SELECT * FROM employee ORDER BY first_name ASC;
+
 SELECT first_name,last_name,salary,dept_id FROM employee GROUP BY first_name,last_name,salary,dept_id;

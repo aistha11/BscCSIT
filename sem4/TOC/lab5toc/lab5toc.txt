@@ -1,0 +1,19 @@
+la5 write a program that implements valid tokenizer for C-identifier and Keywords
+
+C-identifier:- ( _ / alphabet)( _ / alpha / digits)
+Keywords:- void , int, float, if, else
+
+
+
+start---q0-->( _ / alphabet)--->q1(( _ / alpha / digits))
+
+
+
+start---->q0---e---q1---l---q2---s--q3--e--{q4}
+	   |\
+	   | i
+	   |  \
+	   | 	q5---f---{q6}
+	   |  	 \--n--q7--t--{q8}
+	   |
+	   _---f--q9--l--q10--o--q11--a--q12--t--{q13}

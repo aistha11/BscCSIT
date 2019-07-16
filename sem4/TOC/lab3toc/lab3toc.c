@@ -8,6 +8,7 @@ int accepted=0;
 void transition (int q, int ch);
 int main ()
 {
+    printf("Hello");
     int q=0,ii=0;
     transition(q,ii);
     //printf("The state q is %d",q);

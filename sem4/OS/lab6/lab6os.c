@@ -6,7 +6,7 @@ int main ()
     float awt=0,atat=0;
     printf("Enter the number of process: ");
     scanf("%d",&n);
-    printf("Enter the burst time of processs: \n");
+    printf("Enter the burst time of process: \n");
     for (i=0;i<n;i++)
         scanf("%d",&bt[i]);
     for(i=0;i<n;i++)

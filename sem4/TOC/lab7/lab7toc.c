@@ -29,10 +29,12 @@ int TotalTerminals(char cy[])
     for(i=0;cy[i]!='\0';i++)
         if(cy[i]!='P')
             c++;
+    printf("The Total Terminals are: %d\n",c);
     return c;
 }
 void leftmostProduction1(char ty[], char cy[])
 {
+    printf("1 ");
     int i=0;  //i for ty
     int j=0;  //j for cy
 
@@ -52,6 +54,7 @@ void leftmostProduction1(char ty[], char cy[])
 }
 void leftmostProduction2(char ty[], char cy[])
 {
+    printf("2 ");
     int i=0;  //i for ty
     int j=0;  //j for cy
 
@@ -72,6 +75,7 @@ void leftmostProduction2(char ty[], char cy[])
 }
 void leftmostProduction3(char ty[], char cy[])
 {
+    printf("3 ");
     int i=0;  //i for ty
     int j=0;  //j for cy
 
@@ -92,6 +96,7 @@ void leftmostProduction3(char ty[], char cy[])
 }
 void leftmostProduction4(char ty[], char cy[])
 {
+    printf("4 ");
     int i=0;  //i for ty
     int j=0;  //j for cy
 
@@ -114,6 +119,7 @@ void leftmostProduction4(char ty[], char cy[])
 }
 void leftmostProduction5(char ty[], char cy[])
 {
+    printf("5 ");
     int i=0;  //i for ty
     int j=0;  //j for cy
 
@@ -137,6 +143,7 @@ void leftmostProduction5(char ty[], char cy[])
 void IsPalindrome (char inp[], char cy[])//cy=currentyield
 {
    char ty[100];//tempyield
+
    if(IsAllTerminal(cy))
    {
        if(strcmp(inp,cy)==0)

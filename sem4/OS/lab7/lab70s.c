@@ -22,35 +22,38 @@ int main ()
     int a[6]={'\0',0,0,0,0,1};
 
     //printf("Enter value for claim matrix:\n");
+    printf(" The claim matrix is: \n");
     for(i=1;i<=tp;i++)
     {
         for(j=1;j<=tr;j++)
         {
-            printf(" C%d%d: ",i,j);
+            //printf(" C%d%d: ",i,j);
             //scanf("%d",&c[i][j]);
-            printf("%d",c[i][j]);
+            printf(" %d",c[i][j]);
         }
         printf("\n");
     }
     //printf("Enter value for allocation matrix:\n");
+    printf("\n The allocation matrix is: \n");
     for(i=1;i<=tp;i++)
     {
         for(j=1;j<=tr;j++)
         {
-            printf("P%d%d: ",i,j);
+            //printf("P%d%d: ",i,j);
             //scanf("%d",&P[i][j]);
-            printf("%d ",P[i][j]);
+            printf(" %d",P[i][j]);
         }
         printf("\n");
     }
     //printf("Enter the availability vector:\n");
+    printf("\n The availability vector is: \n");
     for(i=1;i<=tr;i++)
     {
         //scanf("%d",&a[i]);
         temp[i]=a[i];
-        printf("%d  ",temp[i]);
+        printf(" %d",temp[i]);
     }
-
+    //printf("\n");
     for(i=1;i<=tp;i++)
    {
         sum=0;
@@ -58,7 +61,7 @@ int main ()
             sum+=P[i][j];
         if(sum==0)
         {
-            m[k]=1;
+            m[k]=i;
             k++;
         }
     }
@@ -80,13 +83,13 @@ int main ()
                 {
                     m[k]=i;
                     k++;
-                    for(j=1;j<tr;j++)
+                    for(j=1;j<=tr;j++)
                         temp[j]+=P[i][j];
                 }
             }
         }
     }
-    printf("Deadlock Causing Process are: \n");
+    printf("\n Deadlock Causing Process are: \n");
     for(j=1;j<=tp;j++)
     {
         found=0;
@@ -96,7 +99,7 @@ int main ()
                 found=1;
         }
         if(found==0)
-            printf("%d\t",j);
+            printf(" %d\t",j);
         printf("\n");
     }
     return 0;

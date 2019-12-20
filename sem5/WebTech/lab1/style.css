@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+}
+
+header{
+    padding: 3%;
+    background-color: green;
+    margin-bottom: 2px;
+}
+header p{
+    text-align: center;
+    font-size: 20px;
+}
+mark {
+    /* color: blue; */
+    background-color: brown;
+}
+nav {
+    height: 80px;
+    background-color: blue;
+}
+nav ul{
+    float: left;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    line-height: 70px;
+    padding: 5px;
+}
+section{
+    background-color: red;
+    padding: 2%;
+    height: auto;
+    /* text-align: center; */
+}
+section h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.news-block li{
+    list-style: lower-greek;
+}
+.news-block li a{
+    color: green;
+    text-decoration: none;
+}
+.std-info, .std-info tr, .std-info td, .std-info th{
+    border: 2px solid green;
+    border-collapse: collapse;
+    padding: 5px;
+}
+.logo {
+width: 200px;
+height: 200px;
+border-radius: 50%;
+}
+
+footer{
+    padding: 3%;
+    background-color: green;
+    margin-top: 2px;
+    text-align: center;
+    font-size: 2rem;
+}

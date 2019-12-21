@@ -1,19 +1,21 @@
 #include <stdio.h>
 #include <conio.h>
 #include <stdlib.h>
-#include <math.h>
 
-void insertion (int a[],int n)
+void selection (int a[],int n)
 {
     int s,c,temp;
     for(s=1;s<=n-1;s++)
     {
-        temp=a[s];
-        for(c=s-1;c>=0 && a[c]>temp;c--)
+        for(c=s;c<=n-1;c++)
         {
-            a[c+1]=a[c];
+            if(a[s-1]>a[c])
+            {
+                temp=a[s-1];
+                a[s-1]=a[c];
+                a[c]=temp;
+            }
         }
-        a[c+1]=temp;
     }
 }
 int main ()
@@ -29,7 +31,7 @@ int main ()
     {
         printf("%d ",a[i]);
     }
-    insertion(a,n);
+    selection(a,n);
     printf("\nAfter Sorting:\n");
     for(i=0;i<n;i++)
     {

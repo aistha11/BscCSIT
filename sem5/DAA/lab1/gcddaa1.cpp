@@ -2,11 +2,23 @@
 #include <conio.h>
 int gcd (int a, int b)
 {
+    /*
     int r=a%b;
     if(r==0)
             return b;
     else
         return gcd(b,r);
+    */
+    if(a>b)
+            return gcd(b,a);
+    else
+    {
+        if(a==0)
+        return b;
+    else
+        return gcd(b%a,a);
+
+    }
 
 }
 int main ()

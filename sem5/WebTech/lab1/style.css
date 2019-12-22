@@ -12,26 +12,11 @@ header p{
     font-size: 20px;
 }
 mark {
-    /* color: blue; */
     background-color: brown;
 }
-nav {
-    height: 80px;
-    background-color: blue;
-}
-nav ul{
-    float: left;
-}
-nav li {
-    list-style: none;
-    display: inline-block;
-    line-height: 70px;
-    padding: 5px;
-}
 section{
-    background-color: red;
+    background-color: gray;
     padding: 2%;
-    height: auto;
 }
 section h2{
     text-align: center;
@@ -48,11 +33,6 @@ section h2{
     border: 2px solid green;
     border-collapse: collapse;
     padding: 5px;
-}
-.logo {
-width: 200px;
-height: 200px;
-border-radius: 50%;
 }
 
 footer{

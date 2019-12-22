@@ -1,13 +1,11 @@
 body ,ul,h1,h2,h3,h4{
     margin: 0;
-    /* background-color: orange; */
     padding: 0;
 }
-
 header{
     background-color: #D19C00;
     text-align: center;
-    padding: 0.5%;
+    padding: 1%;
 }
 header input[type="text"] {
     background-color: #FFC107;
@@ -21,7 +19,6 @@ article {
     font-size: 25px;
     font-weight: bold;
 }
-
 section {
     background-color: #F9C309;
     display: flex;
@@ -54,14 +51,7 @@ section div p{
     color: black;
     width: 100%;
 }
-
-
-/* .card {
-    padding: 1%;
-    background-color: white;
-} */
-
 footer {
     background-color: #D19C00;
-    padding: 5px;
+    padding: 1%;
 }

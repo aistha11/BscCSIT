@@ -1,9 +1,11 @@
 body{
     margin: 0;
-    padding: 10% 30%; 
+    padding:0;
     /* background-color: gray; */
     background-image: url(https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-1.2.1&w=1000&q=80);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+.form {
+	padding: 10% 30%; 
+}

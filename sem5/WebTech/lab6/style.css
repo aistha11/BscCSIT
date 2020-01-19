@@ -1,0 +1,11 @@
+body{
+    margin: 3%;
+}
+
+table tr td
+{
+    padding: 25px 30px;
+    background-color: deepskyblue;
+    border-radius: 50%;
+    font-size: 18px;
+}

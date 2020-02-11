@@ -6,6 +6,7 @@ using namespace std;
 int random(int a, int b)
 {
     return rand()%(b-a+1)+a;
+    cout<<"Hello";
 }
 
 int main ()

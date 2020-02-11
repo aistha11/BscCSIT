@@ -1,0 +1,13 @@
+****************ASSIGNMENT 2*************************
+
+#What is jquery? Explain in brief with a suitable example. Write js code to display digital clock on browser. (14:02:15)
+
+
+****************ASSIGNMENT 3*************************
+
+#Differentiate between HTML and XML. Write XML scheme to validate XML file containing tags-
+	name( Alphabets only)
+	age(numbers only)
+	gender(either M or F only)
+	username(alphabets and numbers)
+	password(alphabets and numbers)

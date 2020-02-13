@@ -37,17 +37,17 @@ int main()
 	cout<<"\nEnter weight: \n";
 	for(int i=0;i<n;i++)
     {
-        cout<<"\t wt : "<<i;
+        cout<<"\t wt"<<i<<" : ";
         cin>>w[i];
     }
 	int v[n];// = {3, 4, 5,6};
 	cout<<"\nEnter value: \n";
 	for(int i=0;i<n;i++)
     {
-        cout<<"\t v : "<<i;
+        cout<<"\t v"<<i<<" : ";
         cin>>v[i];
     }
-	printf("The maximum profit is %d", knapSack(W, w, v, n));
+	cout<<"The maximum profit is "<<knapSack(W, w, v, n);
 	return 0;
 }
 

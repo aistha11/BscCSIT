@@ -1,6 +1,60 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+int max(int a, int b)
+{
+     return (a > b)? a : b;
+}
+int knapSack(int W, int wt[], int val[], int n)
+{
+int i, w;
+int K[n+1][W+1];
+for (i = 0; i <= n; i++)
+{
+	for (w = 0; w <= W; w++)
+	{
+		if (i==0 || w==0)
+			K[i][w] = 0;
+		else if (wt[i-1] <= w)
+				K[i][w] = max(val[i-1] + K[i-1][w-wt[i-1]], K[i-1][w]);
+		else
+				K[i][w] = K[i-1][w];
+	}
+}
+
+return K[n][W];
+}
+
+int main()
+{
+    int n;
+    cout<<"\nEnter the value of n : ";
+    cin>>n;
+    int W ;//= 5;
+	cout<<"\nEnter the value of W : ";
+	cin>>W;
+	int w[n] ;//= {2, 3, 4,5};
+	cout<<"\nEnter weight: \n";
+	for(int i=0;i<n;i++)
+    {
+        cout<<"\t wt : "<<i;
+        cin>>w[i];
+    }
+	int v[n];// = {3, 4, 5,6};
+	cout<<"\nEnter value: \n";
+	for(int i=0;i<n;i++)
+    {
+        cout<<"\t v : "<<i;
+        cin>>v[i];
+    }
+	printf("The maximum profit is %d", knapSack(W, w, v, n));
+	return 0;
+}
+
+/*
+#include <iostream>
+#include <iomanip>
+using namespace std;
 int w[10],p[10],v[10][10],n,i,j,cap,x[10]={0};
 
 int max(int i, int j)
@@ -18,7 +72,7 @@ int knap(int i, int j)
         else
             value=max(knap(i-1,j),p[i]+knap(i-1,j-w[i]));
         v[i][j]=value;
-        
+
     }
     return v[i][j];
 }
@@ -60,14 +114,14 @@ int main()
                 }
                 else
                     i--;
-                
+
             }
-            
-            
-            
-            
+
+
+
+
         }
-        
+
     }
     cout<<"Items included are\n";
     cout<<"SI.no\tweight\tprofit\n";
@@ -76,6 +130,8 @@ int main()
     cout<<++count<<"\t"<<w[i]<<"\t"<<p[i];
     cout<<"Total profit = "<<profit;
     return 0;
-    
-    
+
+
 }
+
+*/

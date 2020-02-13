@@ -71,8 +71,7 @@ void printRandoms(int arr[],int lower, int upper, int count)
 {
     int i;
     for (i = 0; i < count; i++) {
-        arr[i] = (rand() %
-           (upper - lower + 1)) + lower;
+        arr[i] = (rand() % (upper - lower + 1)) + lower;
         //printf("%4d",arr[i]);
     }
 

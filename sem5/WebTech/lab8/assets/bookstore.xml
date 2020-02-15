@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="bookstore.xsl"?>
+<bookstore>
+    <book>
+        <title>Web Technology</title>
+        <price>$100</price>
+        <author>Krishna Raj Giri</author>
+        <isbn>1234</isbn>
+    </book>
+    <book>
+        <title>Javascript</title>
+        <price>$18</price>
+        <author>Leo Tokyo Lee</author>
+        <isbn>1235</isbn>
+    </book>
+    <book>
+        <title>Machine Learning</title>
+        <price>$120</price>
+        <author>Sung Jung Karki</author>
+        <isbn>1236</isbn>
+    </book>
+</bookstore>
+

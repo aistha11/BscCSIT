@@ -1,0 +1,6 @@
+LAB tasks need to submit before practical exam.
+
+7. Use any two compression tools and compress different medias & compare.
+8. Use any online morphing tools and implement your own design.
+9. Use any multimedia tool for audio clip processing.
+10. Use any multimedia tool for vido clip processing.

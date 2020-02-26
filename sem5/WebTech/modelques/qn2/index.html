@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="form.css">
+    <title>Form</title>
+    <script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+    
+    <div class="form">
+		<h2>Enter Details</h2>
+        <form action="welcome.html" onsubmit="return validate()">
+            User Name: <input id="uname" type="text" name="username" required><br><br>
+            Password: <input id="upass" type="password" name="password" required><br><br>
+            Education Field: 
+            <input type="checkbox" name="field[]" value="csit"> BscCSIT
+            <input type="checkbox" name="field[]" value="bca"> BCA
+            <input type="checkbox" name="field[]" value="bit"> BIT <br><br>
+            
+            <button  type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

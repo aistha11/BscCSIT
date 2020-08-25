@@ -2,7 +2,7 @@
 #include<iomanip>
 #include<math.h>
 using namespace std;
-#define n 11
+#define n 6
 void selection(float a[])
 {
     int s,c;

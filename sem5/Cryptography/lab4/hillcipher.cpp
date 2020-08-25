@@ -12,10 +12,17 @@ void getKey();
 void inverse();
 
 int main() {
+
+    bool exit=0;
     getKey();
-	getMessage();
-	encryption();
-	decryption();
+    while(exit!=1)
+    {
+        getMessage();
+        encryption();
+        decryption();
+        cout<<"\n\t\tExit? 0/1 : ";cin>>exit;
+    }
+
 }
 
 void encryption() {

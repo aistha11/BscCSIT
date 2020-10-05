@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvCSharp", "AdvCSharp\AdvCSharp.csproj", "{833DFA6B-6F00-41AB-B543-E2E2284F3671}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{833DFA6B-6F00-41AB-B543-E2E2284F3671}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{833DFA6B-6F00-41AB-B543-E2E2284F3671}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{833DFA6B-6F00-41AB-B543-E2E2284F3671}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{833DFA6B-6F00-41AB-B543-E2E2284F3671}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {91653236-C973-4E65-BFAA-F9547EB2B856}
+	EndGlobalSection
+EndGlobal

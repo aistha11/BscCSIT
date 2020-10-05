@@ -1,0 +1,7 @@
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\AdvCSharp\AdvCSharp\bin\Debug\AdvCSharp.exe.config
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\AdvCSharp\AdvCSharp\bin\Debug\AdvCSharp.exe
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\AdvCSharp\AdvCSharp\bin\Debug\AdvCSharp.pdb
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\AdvCSharp\AdvCSharp\obj\Debug\AdvCSharp.csprojAssemblyReference.cache
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\AdvCSharp\AdvCSharp\obj\Debug\AdvCSharp.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\AdvCSharp\AdvCSharp\obj\Debug\AdvCSharp.exe
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\AdvCSharp\AdvCSharp\obj\Debug\AdvCSharp.pdb

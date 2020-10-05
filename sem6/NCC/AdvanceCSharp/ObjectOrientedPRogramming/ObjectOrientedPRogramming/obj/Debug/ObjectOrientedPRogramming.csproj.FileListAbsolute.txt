@@ -1,0 +1,7 @@
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\ObjectOrientedPRogramming\ObjectOrientedPRogramming\bin\Debug\ObjectOrientedPRogramming.exe.config
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\ObjectOrientedPRogramming\ObjectOrientedPRogramming\bin\Debug\ObjectOrientedPRogramming.exe
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\ObjectOrientedPRogramming\ObjectOrientedPRogramming\bin\Debug\ObjectOrientedPRogramming.pdb
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\ObjectOrientedPRogramming\ObjectOrientedPRogramming\obj\Debug\ObjectOrientedPRogramming.csprojAssemblyReference.cache
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\ObjectOrientedPRogramming\ObjectOrientedPRogramming\obj\Debug\ObjectOrientedPRogramming.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\ObjectOrientedPRogramming\ObjectOrientedPRogramming\obj\Debug\ObjectOrientedPRogramming.exe
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\AdvanceCSharp\ObjectOrientedPRogramming\ObjectOrientedPRogramming\obj\Debug\ObjectOrientedPRogramming.pdb

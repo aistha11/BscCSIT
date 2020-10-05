@@ -1,0 +1,7 @@
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\BasicCSharp\BasicCSharp\bin\Debug\BasicCSharp.exe.config
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\BasicCSharp\BasicCSharp\bin\Debug\BasicCSharp.exe
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\BasicCSharp\BasicCSharp\bin\Debug\BasicCSharp.pdb
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\BasicCSharp\BasicCSharp\obj\Debug\BasicCSharp.csprojAssemblyReference.cache
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\BasicCSharp\BasicCSharp\obj\Debug\BasicCSharp.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\BasicCSharp\BasicCSharp\obj\Debug\BasicCSharp.exe
+C:\Users\dell\Desktop\C-Sharp-Beginner-to-Advance\BasicCSharp\BasicCSharp\obj\Debug\BasicCSharp.pdb

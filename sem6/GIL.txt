@@ -1,0 +1,10 @@
+GIL -> Global Interpreter Lock
+
+~ is a mechanism used in computer-language interpreters to synchronize the execution of threads 
+so that only one native thread can execute at a time.
+
+~ is a mutual-exclusion lock held by a programming language interpreter thread to avoid sharing code that is not thread-safe with other threads
+
+An interpreter that uses GIL always allows exactly one thread to execute at a time, even if run on a multi-core processor.
+
+EG: CPython , Ruby MRI

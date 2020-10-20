@@ -1,0 +1,7 @@
+G:\BscCsit\sem6\NCC\assignments\Assignment1\bin\Debug\Assignment1.exe.config
+G:\BscCsit\sem6\NCC\assignments\Assignment1\bin\Debug\Assignment1.exe
+G:\BscCsit\sem6\NCC\assignments\Assignment1\bin\Debug\Assignment1.pdb
+G:\BscCsit\sem6\NCC\assignments\Assignment1\obj\Debug\Assignment1.csprojAssemblyReference.cache
+G:\BscCsit\sem6\NCC\assignments\Assignment1\obj\Debug\Assignment1.csproj.CoreCompileInputs.cache
+G:\BscCsit\sem6\NCC\assignments\Assignment1\obj\Debug\Assignment1.exe
+G:\BscCsit\sem6\NCC\assignments\Assignment1\obj\Debug\Assignment1.pdb

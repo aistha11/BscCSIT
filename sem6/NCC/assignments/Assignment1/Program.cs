@@ -20,8 +20,9 @@ namespace Assignment1
         {
 			// i.	Constructor
 			Employee e1 = new Employee("Bijaya", "Shrestha", 10000);
-			// ii.	Display the Full Name and Salary using Properties
-			Console.WriteLine("Full Name is {0} {1}", e1.FirstName, e1.LastName);
+            // ii.	Display the Full Name and Salary using Properties
+            //Console.WriteLine("Full Name is {0} {1}", e1.FirstName, e1.LastName);
+            Console.WriteLine("Full Name is {0}",e1.FullName);
 			Console.WriteLine("Salary is {0}", e1.Salary);
 			// iii.	Change the First Name
 			e1.FirstName = "Bijay";

@@ -31,6 +31,15 @@ namespace Assignment1
 			}
 		}
 
+		public string FullName
+		{
+			get
+            {
+				return $"{_firstName} {_lastName}";
+            }
+
+		}
+
 		public double Salary
 		{
 			get => _salary;

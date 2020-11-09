@@ -37,9 +37,9 @@ namespace Assignment1
             Console.WriteLine($"Add 3 items {Add(5, 9, 3)}");
             Console.WriteLine($"Add 2 items {Add(5,7)}");
 			//Dynamic Polymorphism
-			Animal a = new Dog();
-			a.eat();
-            Console.WriteLine($"Color is {a.color}");
+			//Animal a = new Dog();
+			//a.eat();
+			//Console.WriteLine($"Color is {a.color}");
 			//Multiple Inheritance using interfaces
 			C c = new C();
 			c.f1();

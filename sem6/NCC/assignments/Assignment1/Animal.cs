@@ -20,7 +20,7 @@ namespace Assignment1
 
         public override void eat()
         {
-            Console.WriteLine("Dog is Eating...");
+            Console.WriteLine("\tDog is Eating...");
         }
 
         public void bark()

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Lab2.Models;
+﻿using Lab2.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Lab2.Controllers
@@ -24,7 +20,7 @@ namespace Lab2.Controllers
         [HttpGet]
         public IActionResult SimpleBinding()
         {
-            return View(new Model1() { FullName = "AAA BBB", Email = "valid@gmail.com", Salary = 12345678 });
+            return View(new Model1() { FullName = "Bijay Shrestha", Email = "bijay@gmail.com", Salary = 11000 });
         }
         [HttpPost]
         public IActionResult SimpleBinding(Model1 webUser)

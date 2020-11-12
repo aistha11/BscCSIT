@@ -10,7 +10,7 @@ namespace Lab2.Controllers
             return View();
         }
 
-        public IActionResult Display(int n, string greet)
+        public IActionResult Display(int n, string greet) 
         {
             ViewData["n"] = n;
             ViewBag.Greet = greet;
@@ -26,7 +26,7 @@ namespace Lab2.Controllers
         public IActionResult SimpleBinding(Model1 webUser)
         {
             if (ModelState.IsValid)
-                return Content("Hello" + webUser.Email);
+                return Content("Hello! " + webUser.FullName);
             else
                 return View(webUser);
         }

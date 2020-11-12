@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewData["Title"] = "Display";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Display</h1>
+
+<ul>
+    @for (int i = 0; i < (int)ViewData["n"]; i++)
+    {
+        <li>@ViewBag.greet</li>
+    }
+</ul>

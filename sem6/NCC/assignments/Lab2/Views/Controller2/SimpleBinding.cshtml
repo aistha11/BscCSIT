@@ -1,0 +1,31 @@
+﻿@model Lab2.Models.Model1
+
+
+@{
+    ViewData["Title"] = "SimpleBinding";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>SimpleBinding</h1>
+
+@using (var form = Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.FullName)
+        @Html.TextBoxFor(m => m.FullName)
+        @Html.ValidationMessageFor(m => m.FullName)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Email)
+        @Html.TextBoxFor(m => m.Email)
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Salary)
+        @Html.TextBoxFor(m => m.Salary)
+        @Html.ValidationMessageFor(m => m.Salary)
+    </div>
+    <input type="submit" value="Submit" />
+}
+
+

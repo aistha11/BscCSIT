@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Employee>
+@{
+    ViewData["Title"] = "Employee";
+    var title = "Employee List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>
+    @title (Asp.net core 3.1 crud operation with Ado.net
+    )
+</h2>
+
+<h3><a asp-action="Create" class="btn btn-sm btn-secondary">Create</a></h3>
+<table class="table table-bordered table-sm table-striped">
+    <thead>
+        <tr><th>Id</th><th>Name</th><th>Department</th><th>Salary</th><th>Joined On</th><th>Update</th><th>Delete</th></tr>
+    </thead>
+    <tbody>
+        @if (Model == null)
+        {
+            <tr><td colspan="7" class="text-center">No Model Data</td></tr>
+        }
+        else
+        {
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <td>@p.Id</td>
+                    <td>@p.EmployeeName</td>
+                    <td>@p.Department</td>
+                    <td>Rs. @p.Salary</td>
+                    @*<td>@string.Format(new System.Globalization.CultureInfo("Npr"), "{0:C2}", p.Salary)</td>*@
+                    <td>@string.Format("{0:dddd, dd MMMM yyyy}", p.JoinedOn)</td>
+                    <td><a asp-action="Update" asp-route-id="@p.Id">Update</a></td>
+                    <td>
+                        <form asp-action="Delete" method="post" asp-route-id="@p.Id">
+                            <button>Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>

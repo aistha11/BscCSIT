@@ -1,0 +1,44 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "Update";
+    var title = "Update Employee";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .input-validation-error {
+        border-color: red;
+    }
+</style>
+
+<h2>@title</h2>
+
+<div asp-validation-summary="ModelOnly" class="text-danger"></div>
+<form class="m-1 p-1" method="post">
+    <div class="form-group">
+        <label asp-for="Id"></label>
+        <input asp-for="Id" type="text" readonly class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="EmployeeName"></label>
+        <input asp-for="EmployeeName" type="text" class="form-control" />
+        <span asp-validation-for="EmployeeName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Department"></label>
+        <input asp-for="Department" type="text" class="form-control" />
+        <span asp-validation-for="Department" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="Salary"></label>
+        <input asp-for="Salary" type="text" class="form-control" />
+        <span asp-validation-for="Salary" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="JoinedOn"></label>
+        <input asp-for="JoinedOn" type="text" class="form-control" asp-format="{0:d}" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+

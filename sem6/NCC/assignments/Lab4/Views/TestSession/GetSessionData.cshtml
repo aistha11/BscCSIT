@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "GetSessionData";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>GetSessionData</h1>
+
+@if (ViewData["name"] != null)
+{
+    <h2>The name from session is @ViewData["name"]</h2>
+}
+else
+{
+    <h2>There is no value in session.</h2>
+}

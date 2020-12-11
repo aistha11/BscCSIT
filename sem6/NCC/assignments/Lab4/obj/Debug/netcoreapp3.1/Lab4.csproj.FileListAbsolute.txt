@@ -110,5 +110,5 @@ G:\BscCsit\sem6\NCC\assignments\Lab4\obj\Debug\netcoreapp3.1\Lab4.csproj.CoreCom
 G:\BscCsit\sem6\NCC\assignments\Lab4\obj\Debug\netcoreapp3.1\Lab4.MvcApplicationPartsAssemblyInfo.cache
 G:\BscCsit\sem6\NCC\assignments\Lab4\obj\Debug\netcoreapp3.1\Razor\Views\TestSession\Index.cshtml.g.cs
 G:\BscCsit\sem6\NCC\assignments\Lab4\obj\Debug\netcoreapp3.1\Razor\Views\TestSession\GetSessionData.cshtml.g.cs
-G:\BscCsit\sem6\NCC\assignments\Lab4\obj\Debug\netcoreapp3.1\Razor\Views\TestTempData\First.cshtml.g.cs
 G:\BscCsit\sem6\NCC\assignments\Lab4\obj\Debug\netcoreapp3.1\Razor\Views\TestQueryString\Index.cshtml.g.cs
+G:\BscCsit\sem6\NCC\assignments\Lab4\obj\Debug\netcoreapp3.1\Razor\Views\TestTempData\Method1.cshtml.g.cs

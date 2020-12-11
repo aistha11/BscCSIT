@@ -1,0 +1,26 @@
+<!-- 2. Write a jQuery Program to hide <H1> element on Button Click and fadeout element with id as FadeId.  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide Element</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1").hide();
+                $("#FadeId").fadeOut();
+            });
+        });
+    </script>
+</head>
+<body>
+    <h1>Hide Elements</h1>
+
+    <p id="FadeId">This will be fade out on click of the button</p>
+    
+    <button>Hide Element</button>
+</body>
+</html>

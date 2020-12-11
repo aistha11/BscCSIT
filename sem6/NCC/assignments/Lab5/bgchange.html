@@ -1,0 +1,23 @@
+<!-- 1. Write a Client side Javascript Program to change the background color of a page on button click.   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Change</title>
+    <script>
+        var btn = document.querySelector('button');
+        function random(num){
+            return Math.floor(Math.random() * (num + 1));
+        }
+        function changeBgColor(){
+            var nxtCol = 'rgb(' + random(255) + ','+ random(255) + ','+ random(255) + ')';
+            document.body.style.backgroundColor = nxtCol;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="changeBgColor()">Change Color</button>
+</body>
+</html>

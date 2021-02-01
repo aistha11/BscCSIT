@@ -175,3 +175,8 @@ G:\BscCsit\sem6\NCC\assignments\lab3_2\Lab3Two\obj\Debug\netcoreapp3.1\Razor\Vie
 G:\BscCsit\sem6\NCC\assignments\lab3_2\Lab3Two\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Details.cshtml.g.cs
 G:\BscCsit\sem6\NCC\assignments\lab3_2\Lab3Two\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Edit.cshtml.g.cs
 G:\BscCsit\sem6\NCC\assignments\lab3_2\Lab3Two\obj\Debug\netcoreapp3.1\Razor\Views\Movies\Index.cshtml.g.cs
+G:\BscCsit\sem6\NCC\assignments\lab3_2\Lab3Two\obj\Debug\netcoreapp3.1\Razor\Views\Bikes\Create.cshtml.g.cs
+G:\BscCsit\sem6\NCC\assignments\lab3_2\Lab3Two\obj\Debug\netcoreapp3.1\Razor\Views\Bikes\Delete.cshtml.g.cs
+G:\BscCsit\sem6\NCC\assignments\lab3_2\Lab3Two\obj\Debug\netcoreapp3.1\Razor\Views\Bikes\Details.cshtml.g.cs
+G:\BscCsit\sem6\NCC\assignments\lab3_2\Lab3Two\obj\Debug\netcoreapp3.1\Razor\Views\Bikes\Edit.cshtml.g.cs
+G:\BscCsit\sem6\NCC\assignments\lab3_2\Lab3Two\obj\Debug\netcoreapp3.1\Razor\Views\Bikes\Index.cshtml.g.cs

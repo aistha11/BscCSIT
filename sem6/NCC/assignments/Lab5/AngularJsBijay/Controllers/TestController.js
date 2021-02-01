@@ -1,3 +1,3 @@
 ﻿app.controller('TestController', function ($scope) {
-    $scope.testmessage = "Angular app is setup on Visual Studio successfully";
+    $scope.testmessage = "Setup Angular app on Visual Studio successfully";
 });

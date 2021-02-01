@@ -1,0 +1,50 @@
+<!-- Create a basic html table with cell padding, cell spacing, rowspan, colspan and border attribute -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <table border="1" align="center" cellpadding="5" cellspacing="5" width="550px" height="350px">
+        <caption>This is a table caption.</caption>
+        <thead>
+            <tr>
+                <th colspan="4">This is the head of the table with colspan 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Row 1 Cell 1</td>
+                <td>Row 1 Cell 2</td>
+                <td>Row 1 Cell 3</td>
+                <td>Row 1 Cell 4</td>
+            </tr>
+            <tr>
+                <td>Row 2 Cell 2</td>
+                <td>Row 2 Cell 3</td>
+                <td>Row 2 Cell 4</td>
+            </tr>
+            <tr>
+                <td>Row 3 Cell 1</td>
+                <td>Row 3 Cell 2</td>
+                <td colspan="2" align="center">Row 3 Cell 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4">This is the footer of the table with colspan 4</th>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+</html>

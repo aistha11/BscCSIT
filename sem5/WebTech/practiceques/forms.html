@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <script src="validate.js"></script>
+  </head>
+  <body>
+    <form action="#" method="POST">
+      <div>
+        <label for="username">Username: </label>
+        <input type="text" name="username" id="username" required />
+      </div><br>
+      <div>
+        <label for="password">Password: </label>
+        <input type="password" name="password" id="password" required />
+      </div>
+      <br />
+      <div>
+        <label for="gender">Gender</label>
+        <label><input type="radio" name="gender" value="m" />Male</label>
+        <label><input type="radio" name="gender" value="f" />Female</label>
+        <label><input type="radio" name="gender" value="o" />Others</label>
+      </div><br>
+      <div>
+          <label for="hobbies">Hobbies</label>
+          <label><input type="checkbox" name="hobbies">Reading</label>
+          <label><input type="checkbox" name="hobbies">Writing</label>
+          <label><input type="checkbox" name="hobbies">Playing</label>
+      </div><br>
+      <button type="submit" onclick="validateForm()">Submit</button>
+    </form>
+  </body>
+</html>

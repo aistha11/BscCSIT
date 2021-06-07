@@ -1,0 +1,19 @@
+
+Installation files - JDK - Netbeans
+https://drive.google.com/drive/folders/1797OnbfxqCqXlZKcdDQGi9IXG9eU75jU?usp=sharing
+
+
+Lab Sheets
+https://docs.google.com/document/d/12_aQG5rePSJlKqLMz6zgLnlOvNkNfS65eK6cVvAlZx4/edit?usp=sharing
+
+
+Books:
+
+Cay S. Horstmann, Core Java Volume I--Fundamentals, Pearson, Eleventh Edition, 2018
+https://2lib.org/book/5304258/b57909
+
+Cay S. Horstmann, Core Java Volume II-Advance Features, Pearson, Eleventh Edition,2019
+https://2lib.org/book/4996376/cf9483
+
+Herbert Schildt, Java: The Complete Reference, McGraw-Hill Education, Eleventh Edition, 2018
+https://2lib.org/book/3645822/5e8467

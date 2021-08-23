@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Add Two Number Using Angular</title>
+    <script src="Scripts/angular.js"></script>
+    <script src="Controllers/App.js"></script>
+    <script src="Controllers/AddNumController.js"></script>
+</head>
+<body ng-app="myapp">
+    <div ng-controller="AddNumController">
+        <h2>{{heading}}</h2>
+        Num 1: <input ng-model="a" ng-keyup="AddNumbers()"><br /><br />
+        Num 2: <input ng-model="b" ng-keyup="AddNumbers()"><br />
+        <h1>The sum is : {{ sum }}</h1>
+    </div>
+</body>
+</html>

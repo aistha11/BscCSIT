@@ -11,5 +11,6 @@ namespace Lab3Two.Models
 
         public DbSet<Movie> Movies { get; set; }
         public DbSet<Bike> Bikes { get; set; }
+        public DbSet<Student> Students { get; set; }
     }
 }

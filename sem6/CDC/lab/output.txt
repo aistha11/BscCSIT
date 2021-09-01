@@ -1,0 +1,12 @@
+
+ MOV R0,a
+ ADD R0,b
+ MOV t1,R0
+ MOV R0,c
+ MUL R0,d
+ MOV t2, R0
+ MOV R0,t1
+ SUB R0,t2
+ MOV t,R0
+ MOV R0,t
+ MOV x,R0

@@ -1,4 +1,4 @@
-//Lab 2: WAP to recognize e strings under 'a','abb','a*b+'
+//Lab 2: Write a C program to recognize strings under 'a*', 'a*b+', 'abb'
 //L = {a, abb, b, bb, bbbbbbb......, aab, aaab, aaaaabbbbb, aaaa.......bbbbbbb......}
 
 #include<iostream>

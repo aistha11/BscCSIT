@@ -1,4 +1,4 @@
-//lab 1 : program in c++ to determine whether entered comment is valid or not??
+//lab 1 : Write  program  in  C  to  test  whether  given  entered  string  within  valid comment section or not.
 
 #include<iostream>
 #include<iomanip>

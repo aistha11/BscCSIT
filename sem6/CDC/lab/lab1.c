@@ -6,8 +6,6 @@ void main()
 {
     char text[100];
     int i = 2, a = 0;
-
-    printf("\nWrite a C Program to Identify Whether a Given Line is a Comment or Not.");
     printf("\n\nEnter Text : ");
     gets(text);
     if (isComment(text))

@@ -1,0 +1,7 @@
+C:\Users\dell\Desktop\ADONETEXAM\AdoNetConsoleAppCrud\bin\Debug\AdoNetConsoleAppCrud.exe.config
+C:\Users\dell\Desktop\ADONETEXAM\AdoNetConsoleAppCrud\bin\Debug\AdoNetConsoleAppCrud.exe
+C:\Users\dell\Desktop\ADONETEXAM\AdoNetConsoleAppCrud\bin\Debug\AdoNetConsoleAppCrud.pdb
+C:\Users\dell\Desktop\ADONETEXAM\AdoNetConsoleAppCrud\obj\Debug\AdoNetConsoleAppCrud.csprojAssemblyReference.cache
+C:\Users\dell\Desktop\ADONETEXAM\AdoNetConsoleAppCrud\obj\Debug\AdoNetConsoleAppCrud.csproj.CoreCompileInputs.cache
+C:\Users\dell\Desktop\ADONETEXAM\AdoNetConsoleAppCrud\obj\Debug\AdoNetConsoleAppCrud.exe
+C:\Users\dell\Desktop\ADONETEXAM\AdoNetConsoleAppCrud\obj\Debug\AdoNetConsoleAppCrud.pdb

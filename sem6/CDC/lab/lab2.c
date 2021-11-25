@@ -73,7 +73,7 @@ int main()
         }
     }
     if (state == 1)
-        printf("\n %s is accepted under rule 'a'", s);
+        printf("\n %s is accepted under rule 'a*'", s);
     else if ((state == 2) || (state == 4))
         printf("\n %s is accepted under rule 'a*b+'", s);
     else if (state == 5)

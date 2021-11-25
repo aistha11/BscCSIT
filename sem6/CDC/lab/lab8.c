@@ -11,7 +11,6 @@ char act[15];
 void check();
 void main()
 {
-    //clrscr();
     printf("\n\t\t SHIFT REDUCE PARSER\n");
     printf("\n GRAMMER\n");
     printf("\n E->E+E\n E->E/E");

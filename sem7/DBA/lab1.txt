@@ -1,0 +1,56 @@
+
+//
+	1. Create Database using DBCA.
+	2. Create table customers with attributes first_name, last_name, phone_number and customer_id as a primary key.
+	3. Create table orders with attributes items, price, order_id as primary key and customer_id as a foreign key.
+	4. Insert 5 rows in customer table and 5 rows in order table.
+	5. Create View to display the list of customers who have placed orders
+//
+
+// 2 no
+create table customers (
+    customer_id int not null PRIMARY Key,
+    first_name varchar(25) not null,
+    last_name varchar(25) not null,
+    phone_number int not null
+);
+
+create table orders (
+    order_id int not null PRIMARY Key,
+    items varchar(25) not null,
+    price NUMBER(8,2) not null,
+    customer_id INT not NULL,
+    FOREIGN KEY (customer_id) REFERENCES customers(customer_id)
+);
+
+// 4 no
+
+insert into customers (customer_id, first_name, last_name, phone_number) values (1, 'Bijay', 'Shrestha', 9876543210);
+insert into customers (customer_id, first_name, last_name, phone_number) values (2, 'Dipak', 'Thapa Magar', 9860558458);
+insert into customers (customer_id, first_name, last_name, phone_number) values (3, 'Ramesh', 'Neupane', 9873333210);
+insert into customers (customer_id, first_name, last_name, phone_number) values (4, 'Gaurav', 'Poudel', 9876549990);
+insert into customers (customer_id, first_name, last_name, phone_number) values (5, 'Sailesh', 'Karki', 9876541470);
+
+insert into orders (order_id, items, price, customer_id) values (1, 'Apple', 120, 2);
+insert into orders (order_id, items, price, customer_id) values (2, 'Banana', 220, 1);
+insert into orders (order_id, items, price, customer_id) values (3, 'Cream', 124, 3);
+insert into orders (order_id, items, price, customer_id) values (4, 'Biscute', 20, 5);
+insert into orders (order_id, items, price, customer_id) values (5, 'Keyboard', 420, 4);
+
+select * from customers;
+select * from orders;
+
+// 5 no
+
+CREATE VIEW customer_list AS
+SELECT c.customer_id,c.first_name, c.last_name
+FROM customers c 
+INNER JOIN orders o 
+ON c.customer_id = o.customer_id;
+
+
+
+select * from customer_list;
+
+
+

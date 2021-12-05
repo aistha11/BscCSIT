@@ -1,0 +1,89 @@
+Lab 2: 
+
+-----------------------------------------------------------------------------------------
+
+1. Create user identified by password
+	Syntax: $> CREATE USER user-name IDENTIFIED BY password
+
+-----------------------------------------------------------------------------------------
+
+2. Find the list of users with OPEN status
+	$> SELECT username from dba users where account_status = "OPEN";
+	
+
+-----------------------------------------------------------------------------------------
+
+3. Grant create session to user
+	Syntax: $> GRANT CREATE SESSION TO user-name
+
+-----------------------------------------------------------------------------------------
+
+4. Create user with password expire
+	Syntax: $> CREATE USER user-name IDENTIFIED By password PASSWORD EXPIRE
+
+-----------------------------------------------------------------------------------------
+
+5. Grant SELECT privilage on Table to user
+	Syntax: $> select * from customers;
+			GRANT SELECT ON customers TO dipak;
+			GRANT SELECT ON customer_list TO dipak;
+			select * from customers;
+
+
+
+-----------------------------------------------------------------------------------------
+
+6. Grant All privileges on table to user
+	Syntax: $> GRANT ALL ON customers TO bijay;
+
+-----------------------------------------------------------------------------------------
+
+7. Revoke Select privilege from table
+	Syntax: $> REVOKE SELECT ON customers FROM dipak;
+
+-----------------------------------------------------------------------------------------
+
+8. Revoke all privileges from table
+	Syntax: $> REVOKE ALL ON customers FROM bijay;
+
+-----------------------------------------------------------------------------------------
+
+9. Drop User
+	Syntax: $> DROP USER ramesh;
+
+-----------------------------------------------------------------------------------------
+
+
+--1 Create user identified by password
+
+CREATE USER bijay IDENTIFIED BY Bijay123;
+CREATE USER dipak IDENTIFIED BY Dipak123;
+
+--2
+SELECT username from dba_users where account_status = 'OPEN';
+
+--3
+GRANT CREATE SESSION TO dipak;
+GRANT CREATE SESSION TO ramesh;
+
+--4
+CREATE USER ramesh IDENTIFIED By Ramesh123 PASSWORD EXPIRE;
+
+--5
+select * from customers;
+GRANT SELECT ON customers TO dipak;
+GRANT SELECT ON customer_list TO dipak;
+select * from customers;
+
+--6
+GRANT ALL ON customers TO bijay;
+
+
+--7
+REVOKE SELECT ON customers FROM dipak;
+
+--8
+REVOKE ALL ON customers FROM bijay;
+
+--9
+DROP USER ramesh;

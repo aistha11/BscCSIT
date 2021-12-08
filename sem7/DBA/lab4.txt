@@ -1,0 +1,91 @@
+Data Pump
+
+Export and import table data and schema using Data Pump
+
+G:\BscCsit\sem7\DBA\DBABackup
+
+Create or replace directory dba_backup as  'G:\BscCsit\sem7\DBA\DBABackup';
+
+Drop directory dba_backup;
+
+--------------------EXPORT PL/SQL------------------------------
+
+set scan off
+set serveroutput on
+set escape off
+whenever sqlerror exit 
+DECLARE
+    h1 number;
+    s varchar2(1000):=NULL;
+    errorvarchar varchar2(100):= 'ERROR';
+    tryGetStatus number := 0;
+    success_with_info EXCEPTION;
+    PRAGMA EXCEPTION_INIT(success_with_info, -31627);
+begin
+    h1 := dbms_datapump.open (operation => 'EXPORT', job_mode => 'SCHEMA', job_name => 'EXP_SD_802', version => 'COMPATIBLE'); 
+    tryGetStatus := 1;
+    dbms_datapump.set_parameter(handle => h1, name => 'COMPRESSION', value => 'ALL'); 
+    dbms_datapump.set_parallel(handle => h1, degree => 1); 
+    dbms_datapump.add_file(handle => h1, filename => 'EXPDAT.LOG', directory => 'DBA_BACKUP', filetype => 3); 
+    dbms_datapump.set_parameter(handle => h1, name => 'KEEP_MASTER', value => 1); 
+    dbms_datapump.metadata_filter(handle => h1, name => 'SCHEMA_EXPR', value => 'IN(''SYSTEM'')'); 
+    dbms_datapump.add_file(handle => h1, filename => 'EXPDAT%U.DMP', directory => 'DBA_BACKUP', filesize => '500M',  filetype => 1, reusefile => 1); 
+    dbms_datapump.set_parameter(handle => h1, name => 'INCLUDE_METADATA', value => 1); 
+    dbms_datapump.set_parameter(handle => h1, name => 'DATA_ACCESS_METHOD', value => 'AUTOMATIC'); 
+    dbms_datapump.set_parameter(handle => h1, name => 'ESTIMATE', value => 'BLOCKS'); 
+    dbms_datapump.start_job(handle => h1, skip_current => 0, abort_step => 0); 
+    dbms_datapump.detach(handle => h1); 
+    errorvarchar := 'NO_ERROR'; 
+EXCEPTION
+    WHEN OTHERS THEN
+    BEGIN 
+        IF ((errorvarchar = 'ERROR')AND(tryGetStatus=1)) THEN 
+            DBMS_DATAPUMP.DETACH(h1);
+        END IF;
+    EXCEPTION 
+    WHEN OTHERS THEN 
+        NULL;
+    END;
+    RAISE;
+END;
+/
+
+--------------IMPORT PL/SQL------------------------------------------
+
+set scan off
+set serveroutput on
+set escape off
+whenever sqlerror exit 
+DECLARE
+    s varchar2(1000); 
+    h1 number;
+    errorvarchar varchar2(100):= 'ERROR';
+    tryGetStatus number := 0;
+begin
+    h1 := dbms_datapump.open (operation => 'IMPORT', job_mode => 'SCHEMA', job_name => 'IMP_SD_922-07_59_51', version => 'COMPATIBLE'); 
+    tryGetStatus := 1;
+    dbms_datapump.set_parallel(handle => h1, degree => 1); 
+    dbms_datapump.add_file(handle => h1, filename => 'IMPORT-'||to_char(sysdate,'hh24_mi_ss')||'.LOG', directory => 'DBA_BACKUP', filetype=>DBMS_DATAPUMP.KU$_FILE_TYPE_LOG_FILE); 
+    dbms_datapump.set_parameter(handle => h1, name => 'KEEP_MASTER', value => 1); 
+    dbms_datapump.metadata_filter(handle => h1, name => 'SCHEMA_EXPR', value => 'IN(''SYSTEM'')'); 
+    dbms_datapump.add_file(handle => h1, filename => 'EXPDAT01.DMP', directory => 'DBA_BACKUP', filetype => 1); 
+    dbms_datapump.set_parameter(handle => h1, name => 'INCLUDE_METADATA', value => 1); 
+    dbms_datapump.set_parameter(handle => h1, name => 'DATA_ACCESS_METHOD', value => 'AUTOMATIC'); 
+    dbms_datapump.set_parameter(handle => h1, name => 'TABLE_EXISTS_ACTION', value => 'REPLACE'); 
+    dbms_datapump.set_parameter(handle => h1, name => 'SKIP_UNUSABLE_INDEXES', value => 0);
+    dbms_datapump.start_job(handle => h1, skip_current => 0, abort_step => 0); 
+    dbms_datapump.detach(handle => h1); 
+    errorvarchar := 'NO_ERROR'; 
+EXCEPTION
+    WHEN OTHERS THEN
+    BEGIN 
+        IF ((errorvarchar = 'ERROR')AND(tryGetStatus=1)) THEN 
+            DBMS_DATAPUMP.DETACH(h1);
+        END IF;
+    EXCEPTION 
+    WHEN OTHERS THEN 
+        NULL;
+    END;
+    RAISE;
+END;
+/

@@ -1,0 +1,23 @@
+Starting "SYSTEM"."EXP_SD_802":  
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+.  estimated "SYSTEM"."CUSTOMERS"                        6.330 KB
+.  estimated "SYSTEM"."ORDERS"                           6.266 KB
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Processing object type SCHEMA_EXPORT/STATISTICS/MARKER
+Processing object type SCHEMA_EXPORT/DEFAULT_ROLE
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Processing object type SCHEMA_EXPORT/TABLE/COMMENT
+Processing object type SCHEMA_EXPORT/VIEW/VIEW
+Processing object type SCHEMA_EXPORT/VIEW/GRANT/OWNER_GRANT/OBJECT_GRANT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+. . exported "SYSTEM"."CUSTOMERS"                        5.164 KB       6 rows
+. . exported "SYSTEM"."ORDERS"                           5.101 KB       5 rows
+Master table "SYSTEM"."EXP_SD_802" successfully loaded/unloaded
+******************************************************************************
+Dump file set for SYSTEM.EXP_SD_802 is:
+  G:\BSCCSIT\SEM7\DBA\DBABACKUP\EXPDAT01.DMP
+Job "SYSTEM"."EXP_SD_802" successfully completed at Wed Dec 8 07:58:51 2021 elapsed 0 00:03:24

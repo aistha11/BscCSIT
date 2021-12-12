@@ -1,0 +1,29 @@
+Master table "SYSTEM"."IMP_SD_1202-11_56_01" successfully loaded/unloaded
+Starting "SYSTEM"."IMP_SD_1202-11_56_01":  
+Processing object type SCHEMA_EXPORT/DEFAULT_ROLE
+Processing object type SCHEMA_EXPORT/PRE_SCHEMA/PROCACT_SCHEMA
+Processing object type SCHEMA_EXPORT/TABLE/TABLE
+Table "SYSTEM"."CUSTOMERS" exists. Data will be appended to existing table but all dependent metadata will be skipped due to table_exists_action of append
+Table "SYSTEM"."EXP_SD_802" exists. Data will be appended to existing table but all dependent metadata will be skipped due to table_exists_action of append
+Table "SYSTEM"."IMP_SD_922-07_59_51" exists. Data will be appended to existing table but all dependent metadata will be skipped due to table_exists_action of append
+Processing object type SCHEMA_EXPORT/TABLE/TABLE_DATA
+ORA-31693: Table data object "SYSTEM"."IMP_SD_922-07_59_51" failed to load/unload and is being skipped due to error:
+ORA-00001: unique constraint (SYSTEM.SYS_MTABLE_00001216C_IND_1) violated
+ORA-31693: Table data object "SYSTEM"."EXP_SD_802" failed to load/unload and is being skipped due to error:
+ORA-00001: unique constraint (SYSTEM.SYS_MTABLE_0000120C8_IND_1) violated
+ORA-31693: Table data object "SYSTEM"."CUSTOMERS" failed to load/unload and is being skipped due to error:
+ORA-00001: unique constraint (SYSTEM.SYS_C007592) violated
+. . imported "SYSTEM"."ORDERS"                           5.101 KB       5 rows
+Processing object type SCHEMA_EXPORT/TABLE/COMMENT
+Processing object type SCHEMA_EXPORT/VIEW/VIEW
+ORA-31684: Object type VIEW:"SYSTEM"."CUSTOMER_LIST" already exists
+ORA-31684: Object type VIEW:"SYSTEM"."CUSTOMER_LIST_BY_ID" already exists
+Processing object type SCHEMA_EXPORT/VIEW/GRANT/OWNER_GRANT/OBJECT_GRANT
+ORA-39111: Dependent object type OBJECT_GRANT:"SYSTEM"."SELECT" skipped, base object type VIEW:"SYSTEM"."CUSTOMER_LIST" already exists
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/INDEX
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/INDEX/STATISTICS/INDEX_STATISTICS
+Processing object type SCHEMA_EXPORT/TABLE/CONSTRAINT/REF_CONSTRAINT
+Processing object type SCHEMA_EXPORT/TABLE/STATISTICS/TABLE_STATISTICS
+Processing object type SCHEMA_EXPORT/STATISTICS/MARKER
+Job "SYSTEM"."IMP_SD_1202-11_56_01" completed with 6 error(s) at Sun Dec 12 12:01:54 2021 elapsed 0 00:02:08

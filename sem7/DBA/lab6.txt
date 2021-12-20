@@ -1,0 +1,38 @@
+BACKUP USING RMAN
+command:
+bin/
+rman target/
+backup database;
+shutdown immediate;
+startup mount;
+backup database tag 'test';
+list backup;
+alter database open;
+
+TRIGGER
+
+create or replace NONEDITIONABLE trigger customers_audit_trg
+    AFTER
+    INSERT OR UPDATE OR DELETE
+    ON customers
+    FOR EACH ROW
+DECLARE
+    transaction_name varchar(30);
+BEGIN
+    transaction_name := CASE
+        WHEN INSERTING THEN 'INSERT'
+        WHEN UPDATING THEN 'UPDATE'
+        WHEN DELETING THEN 'DELETE'
+    END;
+    INSERT INTO audits (table_name, transaction_name,by_user,transaction_date)
+    VALUES('customers',transaction_name,USER,SYSDATE);
+END;
+
+STORED PROCEDURE
+
+create or replace NONEDITIONABLE procedure greetings
+as 
+begin
+    DBMS_OUTPUT.PUT_LINE('Hello World');
+end;
+execute greetings;
